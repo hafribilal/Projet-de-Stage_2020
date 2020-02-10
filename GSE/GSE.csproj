@@ -119,6 +119,7 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Massar\Import.cs" />
     <Compile Include="Massar\InfoEleve.cs" />
     <Compile Include="Massar\ListEleve.cs" />
     <Compile Include="Massar\MoyenneCc.cs" />
