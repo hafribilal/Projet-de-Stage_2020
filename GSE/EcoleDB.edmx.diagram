@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c91d0d2e4b7f43e792b8d349f58fafb6" Name="Diagram1">
+        <EntityTypeShape EntityType="EcoleDBModel.Absence_Eleve" Width="1.5" PointX="5.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Absence_Prof" Width="1.5" PointX="13" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Ancienne_Classe" Width="1.5" PointX="3" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Ancienne_Ecole" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Annee_Scolaire" Width="1.5" PointX="6" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Classe" Width="1.5" PointX="3" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Classe_Details" Width="1.5" PointX="5.25" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Ecole" Width="1.5" PointX="2.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Eleve" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Emploi_Temps" Width="1.5" PointX="13" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Group_Cantine" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Group_Transport" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Matiere" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Mere" Width="1.5" PointX="0.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Niveau" Width="1.5" PointX="0.75" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Note" Width="1.5" PointX="8.25" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Note_Details" Width="1.5" PointX="8.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Pere" Width="1.5" PointX="0.75" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Professeur" Width="1.5" PointX="10.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Retart_Eleve" Width="1.5" PointX="5.25" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Retart_Prof" Width="1.5" PointX="13" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Salle" Width="1.5" PointX="10.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Semestre" Width="1.5" PointX="6" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.sysdiagram" Width="1.5" PointX="2.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EcoleDBModel.Tuteur" Width="1.5" PointX="0.75" PointY="23.625" IsExpanded="true" />
+        <AssociationConnector Association="EcoleDBModel.FK_Absence_Eleve_Eleve" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Absence_Pro_Professeur" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Classe_Details_Ancienne_Classe" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Eleve_Ancienne_Ecole" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Classe_Details_Annee_Scolaire" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Note_Details_Annee_Scolaire" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Note_Exame_Annee_Scolaire" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Classe_Details_Classe" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Classe_Niveau" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Emploi_Temps_Classe" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Classe_Details_Eleve" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Eleve_Group_Cantine" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Eleve_Group_Transport" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Eleve_Mere" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Eleve_Pere" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Eleve_Tuteur" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Note_Details_Eleve" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Note_Exame_Eleve" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Retart_Eleve_Eleve" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Emploi_Temps_Professeur" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Emploi_Temps_Salle" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Note_Details_Matiere" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Note_Exame_Semestre" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Note_Details_Semestre" ManuallyRouted="false" />
+        <AssociationConnector Association="EcoleDBModel.FK_Retart_Pro_Professeur" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

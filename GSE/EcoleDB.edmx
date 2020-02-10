@@ -1,0 +1,1858 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="EcoleDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Absence_Eleve">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="heure_Debut" Type="time" Precision="7" />
+          <Property Name="heure_Fin" Type="time" Precision="7" />
+          <Property Name="date_Absence" Type="date" />
+          <Property Name="motife" Type="nvarchar" MaxLength="50" />
+          <Property Name="eleve" Type="nchar" MaxLength="11" />
+        </EntityType>
+        <EntityType Name="Absence_Prof">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="heure_Debut" Type="time" Precision="7" />
+          <Property Name="heure_Fin" Type="time" Precision="7" />
+          <Property Name="date_Absence" Type="date" />
+          <Property Name="motife" Type="nvarchar" MaxLength="50" />
+          <Property Name="prof" Type="nchar" MaxLength="7" />
+        </EntityType>
+        <EntityType Name="Ancienne_Classe">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="surnom" Type="nvarchar" MaxLength="50" />
+          <Property Name="niveau" Type="int" />
+        </EntityType>
+        <EntityType Name="Ancienne_Ecole">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nom_Ecole_Ar" Type="nvarchar" MaxLength="50" />
+          <Property Name="nom_Ecole_Fr" Type="nvarchar" MaxLength="50" />
+          <Property Name="type_Ecole" Type="nvarchar" MaxLength="50" />
+          <Property Name="statut_Ecole" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Annee_Scolaire">
+          <Key>
+            <PropertyRef Name="annee_Scolaire" />
+          </Key>
+          <Property Name="annee_Scolaire" Type="nchar" MaxLength="9" Nullable="false" />
+          <Property Name="date_Debut" Type="date" />
+          <Property Name="date_Fin" Type="date" />
+        </EntityType>
+        <EntityType Name="Classe">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="surnom" Type="nvarchar" MaxLength="50" />
+          <Property Name="niveau" Type="int" />
+        </EntityType>
+        <EntityType Name="Classe_Details">
+          <Key>
+            <PropertyRef Name="eleve" />
+            <PropertyRef Name="classe" />
+            <PropertyRef Name="annee" />
+          </Key>
+          <Property Name="eleve" Type="nchar" MaxLength="11" Nullable="false" />
+          <Property Name="classe" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="annee" Type="nchar" MaxLength="9" Nullable="false" />
+          <Property Name="ancienne" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Ecole">
+          <Key>
+            <PropertyRef Name="nom" />
+          </Key>
+          <Property Name="nom" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="academie" Type="nvarchar" MaxLength="50" />
+          <Property Name="direction_Provinciale" Type="nvarchar" MaxLength="50" />
+          <Property Name="commoune" Type="nvarchar" MaxLength="50" />
+          <Property Name="ministere" Type="nvarchar" MaxLength="50" />
+          <Property Name="photo" Type="binary" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Eleve">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="nchar" MaxLength="11" Nullable="false" />
+          <Property Name="num" Type="int" />
+          <Property Name="nom_Ar" Type="nvarchar" MaxLength="50" />
+          <Property Name="nom_Fr" Type="nvarchar" MaxLength="50" />
+          <Property Name="prenom_Ar" Type="nvarchar" MaxLength="50" />
+          <Property Name="prenom_Fr" Type="nvarchar" MaxLength="50" />
+          <Property Name="date_Naissance" Type="date" />
+          <Property Name="lieu_Naissance_Ar" Type="nvarchar" MaxLength="100" />
+          <Property Name="lieu_Naissance_Fr" Type="nvarchar" MaxLength="100" />
+          <Property Name="sexe" Type="nvarchar" MaxLength="10" />
+          <Property Name="photo" Type="binary" MaxLength="255" />
+          <Property Name="password" Type="nvarchar" MaxLength="15" />
+          <Property Name="pere" Type="nchar" MaxLength="7" />
+          <Property Name="mere" Type="nchar" MaxLength="7" />
+          <Property Name="tuteur" Type="nchar" MaxLength="7" />
+          <Property Name="type_Tuteur" Type="nvarchar" MaxLength="10" />
+          <Property Name="cantine" Type="int" />
+          <Property Name="transport" Type="int" />
+          <Property Name="anciene_Ecole" Type="int" />
+        </EntityType>
+        <EntityType Name="Emploi_Temps">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="date_Debut" Type="date" />
+          <Property Name="date_Fin" Type="date" />
+          <Property Name="prof" Type="nchar" MaxLength="7" />
+          <Property Name="classe" Type="nvarchar" MaxLength="10" />
+          <Property Name="salle" Type="nvarchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="Group_Cantine">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="surname" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Group_Transport">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="surname" Type="nvarchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Matiere">
+          <Key>
+            <PropertyRef Name="nom_1" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nom_1" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="nom_2" Type="nvarchar" MaxLength="15" />
+          <Property Name="couleur" Type="nvarchar" MaxLength="11" />
+        </EntityType>
+        <EntityType Name="Mere">
+          <Key>
+            <PropertyRef Name="cin" />
+          </Key>
+          <Property Name="cin" Type="nchar" MaxLength="7" Nullable="false" />
+          <Property Name="nom_Ar" Type="nvarchar" MaxLength="50" />
+          <Property Name="nom_Fr" Type="nvarchar" MaxLength="50" />
+          <Property Name="prenom_Ar" Type="nvarchar" MaxLength="50" />
+          <Property Name="prenom_Fr" Type="nvarchar" MaxLength="50" />
+          <Property Name="date_Naissance" Type="date" />
+          <Property Name="lieu_Naissance_Ar" Type="nvarchar" MaxLength="100" />
+          <Property Name="lieu_Naissance_Fr" Type="nvarchar" MaxLength="100" />
+          <Property Name="sexe" Type="nvarchar" MaxLength="10" />
+          <Property Name="photo" Type="binary" MaxLength="255" />
+          <Property Name="metier" Type="nvarchar" MaxLength="20" />
+          <Property Name="tele" Type="nchar" MaxLength="10" />
+          <Property Name="fix" Type="nchar" MaxLength="10" />
+          <Property Name="adresse" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Niveau">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="libelle" Type="nvarchar" MaxLength="50" />
+          <Property Name="option" Type="nvarchar" MaxLength="50" />
+          <Property Name="capacite_Classe" Type="int" />
+        </EntityType>
+        <EntityType Name="Note">
+          <Key>
+            <PropertyRef Name="eleve" />
+            <PropertyRef Name="semester" />
+            <PropertyRef Name="annee" />
+          </Key>
+          <Property Name="eleve" Type="nchar" MaxLength="11" Nullable="false" />
+          <Property Name="semester" Type="int" Nullable="false" />
+          <Property Name="annee" Type="nchar" MaxLength="9" Nullable="false" />
+          <Property Name="note" Type="float" />
+          <Property Name="note_Exame" Type="float" />
+        </EntityType>
+        <EntityType Name="Note_Details">
+          <Key>
+            <PropertyRef Name="eleve" />
+            <PropertyRef Name="semestere" />
+            <PropertyRef Name="annee" />
+            <PropertyRef Name="matiere" />
+          </Key>
+          <Property Name="eleve" Type="nchar" MaxLength="11" Nullable="false" />
+          <Property Name="semestere" Type="int" Nullable="false" />
+          <Property Name="annee" Type="nchar" MaxLength="9" Nullable="false" />
+          <Property Name="matiere" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="ctrl1" Type="float" />
+          <Property Name="ctrl2" Type="float" />
+          <Property Name="ctrl3" Type="float" />
+          <Property Name="ctrl4" Type="float" />
+          <Property Name="note" Type="float" />
+          <Property Name="note_Exame" Type="float" />
+        </EntityType>
+        <EntityType Name="Pere">
+          <Key>
+            <PropertyRef Name="cin" />
+          </Key>
+          <Property Name="cin" Type="nchar" MaxLength="7" Nullable="false" />
+          <Property Name="nom_Ar" Type="nvarchar" MaxLength="50" />
+          <Property Name="nom_Fr" Type="nvarchar" MaxLength="50" />
+          <Property Name="prenom_Ar" Type="nvarchar" MaxLength="50" />
+          <Property Name="prenom_Fr" Type="nvarchar" MaxLength="50" />
+          <Property Name="date_Naissance" Type="date" />
+          <Property Name="lieu_Naissance_Ar" Type="nvarchar" MaxLength="100" />
+          <Property Name="lieu_Naissance_Fr" Type="nvarchar" MaxLength="100" />
+          <Property Name="sexe" Type="nvarchar" MaxLength="10" />
+          <Property Name="photo" Type="binary" MaxLength="255" />
+          <Property Name="metier" Type="nvarchar" MaxLength="20" />
+          <Property Name="tele" Type="nchar" MaxLength="10" />
+          <Property Name="fix" Type="nchar" MaxLength="10" />
+          <Property Name="adresse" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Professeur">
+          <Key>
+            <PropertyRef Name="num_Somme" />
+          </Key>
+          <Property Name="num_Somme" Type="nchar" MaxLength="7" Nullable="false" />
+          <Property Name="cin" Type="nchar" MaxLength="7" Nullable="false" />
+          <Property Name="nom_Ar" Type="nvarchar" MaxLength="50" />
+          <Property Name="nom_Fr" Type="nvarchar" MaxLength="50" />
+          <Property Name="prenom_Ar" Type="nvarchar" MaxLength="50" />
+          <Property Name="prenom_Fr" Type="nvarchar" MaxLength="50" />
+          <Property Name="date_Naissance" Type="date" />
+          <Property Name="lieu_Naissance_Ar" Type="nvarchar" MaxLength="100" />
+          <Property Name="lieu_Naissance_Fr" Type="nvarchar" MaxLength="100" />
+          <Property Name="sexe" Type="nvarchar" MaxLength="10" />
+          <Property Name="photo" Type="binary" MaxLength="255" />
+          <Property Name="specialite" Type="nvarchar" MaxLength="20" />
+          <Property Name="tele" Type="nchar" MaxLength="10" />
+          <Property Name="fix" Type="nchar" MaxLength="10" />
+          <Property Name="adresse" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Retart_Eleve">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="heure_Debut" Type="time" Precision="7" />
+          <Property Name="heure_Fin" Type="time" Precision="7" />
+          <Property Name="date_Retart" Type="date" />
+          <Property Name="motife" Type="nvarchar" MaxLength="50" />
+          <Property Name="eleve" Type="nchar" MaxLength="11" />
+        </EntityType>
+        <EntityType Name="Retart_Prof">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="heure_Debut" Type="time" Precision="7" />
+          <Property Name="heure_Fin" Type="time" Precision="7" />
+          <Property Name="date_Retart" Type="date" />
+          <Property Name="motife" Type="nvarchar" MaxLength="50" />
+          <Property Name="prof" Type="nchar" MaxLength="7" />
+        </EntityType>
+        <EntityType Name="Salle">
+          <Key>
+            <PropertyRef Name="num" />
+          </Key>
+          <Property Name="num" Type="nvarchar" MaxLength="5" Nullable="false" />
+          <Property Name="capacite" Type="int" />
+        </EntityType>
+        <EntityType Name="Semestre">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="libelle" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Tuteur">
+          <Key>
+            <PropertyRef Name="cin" />
+          </Key>
+          <Property Name="cin" Type="nchar" MaxLength="7" Nullable="false" />
+          <Property Name="nom_Ar" Type="nvarchar" MaxLength="50" />
+          <Property Name="nom_Fr" Type="nvarchar" MaxLength="50" />
+          <Property Name="prenom_Ar" Type="nvarchar" MaxLength="50" />
+          <Property Name="prenom_Fr" Type="nvarchar" MaxLength="50" />
+          <Property Name="date_Naissance" Type="date" />
+          <Property Name="lieu_Naissance_Ar" Type="nvarchar" MaxLength="100" />
+          <Property Name="lieu_Naissance_Fr" Type="nvarchar" MaxLength="100" />
+          <Property Name="sexe" Type="nvarchar" MaxLength="10" />
+          <Property Name="photo" Type="binary" MaxLength="255" />
+          <Property Name="metier" Type="nvarchar" MaxLength="20" />
+          <Property Name="tele" Type="nchar" MaxLength="10" />
+          <Property Name="fix" Type="nchar" MaxLength="10" />
+          <Property Name="adresse" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <Association Name="FK_Absence_Eleve_Eleve">
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="0..1" />
+          <End Role="Absence_Eleve" Type="Self.Absence_Eleve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Eleve">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Absence_Eleve">
+              <PropertyRef Name="eleve" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Absence_Pro_Professeur">
+          <End Role="Professeur" Type="Self.Professeur" Multiplicity="0..1" />
+          <End Role="Absence_Prof" Type="Self.Absence_Prof" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Professeur">
+              <PropertyRef Name="num_Somme" />
+            </Principal>
+            <Dependent Role="Absence_Prof">
+              <PropertyRef Name="prof" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Classe_Details_Ancienne_Classe">
+          <End Role="Ancienne_Classe" Type="Self.Ancienne_Classe" Multiplicity="0..1" />
+          <End Role="Classe_Details" Type="Self.Classe_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ancienne_Classe">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Classe_Details">
+              <PropertyRef Name="ancienne" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Classe_Details_Annee_Scolaire">
+          <End Role="Annee_Scolaire" Type="Self.Annee_Scolaire" Multiplicity="1" />
+          <End Role="Classe_Details" Type="Self.Classe_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Annee_Scolaire">
+              <PropertyRef Name="annee_Scolaire" />
+            </Principal>
+            <Dependent Role="Classe_Details">
+              <PropertyRef Name="annee" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Classe_Details_Classe">
+          <End Role="Classe" Type="Self.Classe" Multiplicity="1" />
+          <End Role="Classe_Details" Type="Self.Classe_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Classe">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Classe_Details">
+              <PropertyRef Name="classe" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Classe_Details_Eleve">
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="1" />
+          <End Role="Classe_Details" Type="Self.Classe_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Eleve">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Classe_Details">
+              <PropertyRef Name="eleve" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Classe_Niveau">
+          <End Role="Niveau" Type="Self.Niveau" Multiplicity="0..1" />
+          <End Role="Classe" Type="Self.Classe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Niveau">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Classe">
+              <PropertyRef Name="niveau" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Eleve_Ancienne_Ecole">
+          <End Role="Ancienne_Ecole" Type="Self.Ancienne_Ecole" Multiplicity="0..1" />
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ancienne_Ecole">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Eleve">
+              <PropertyRef Name="anciene_Ecole" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Eleve_Group_Cantine">
+          <End Role="Group_Cantine" Type="Self.Group_Cantine" Multiplicity="0..1" />
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Group_Cantine">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Eleve">
+              <PropertyRef Name="cantine" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Eleve_Group_Transport">
+          <End Role="Group_Transport" Type="Self.Group_Transport" Multiplicity="0..1" />
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Group_Transport">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Eleve">
+              <PropertyRef Name="transport" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Eleve_Mere">
+          <End Role="Mere" Type="Self.Mere" Multiplicity="0..1" />
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Mere">
+              <PropertyRef Name="cin" />
+            </Principal>
+            <Dependent Role="Eleve">
+              <PropertyRef Name="mere" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Eleve_Pere">
+          <End Role="Pere" Type="Self.Pere" Multiplicity="0..1" />
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pere">
+              <PropertyRef Name="cin" />
+            </Principal>
+            <Dependent Role="Eleve">
+              <PropertyRef Name="pere" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Eleve_Tuteur">
+          <End Role="Tuteur" Type="Self.Tuteur" Multiplicity="0..1" />
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tuteur">
+              <PropertyRef Name="cin" />
+            </Principal>
+            <Dependent Role="Eleve">
+              <PropertyRef Name="tuteur" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Emploi_Temps_Classe">
+          <End Role="Classe" Type="Self.Classe" Multiplicity="0..1" />
+          <End Role="Emploi_Temps" Type="Self.Emploi_Temps" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Classe">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Emploi_Temps">
+              <PropertyRef Name="classe" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Emploi_Temps_Professeur">
+          <End Role="Professeur" Type="Self.Professeur" Multiplicity="0..1" />
+          <End Role="Emploi_Temps" Type="Self.Emploi_Temps" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Professeur">
+              <PropertyRef Name="num_Somme" />
+            </Principal>
+            <Dependent Role="Emploi_Temps">
+              <PropertyRef Name="prof" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Emploi_Temps_Salle">
+          <End Role="Salle" Type="Self.Salle" Multiplicity="0..1" />
+          <End Role="Emploi_Temps" Type="Self.Emploi_Temps" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Salle">
+              <PropertyRef Name="num" />
+            </Principal>
+            <Dependent Role="Emploi_Temps">
+              <PropertyRef Name="salle" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Note_Details_Annee_Scolaire">
+          <End Role="Annee_Scolaire" Type="Self.Annee_Scolaire" Multiplicity="1" />
+          <End Role="Note_Details" Type="Self.Note_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Annee_Scolaire">
+              <PropertyRef Name="annee_Scolaire" />
+            </Principal>
+            <Dependent Role="Note_Details">
+              <PropertyRef Name="annee" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Note_Details_Eleve">
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="1" />
+          <End Role="Note_Details" Type="Self.Note_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Eleve">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Note_Details">
+              <PropertyRef Name="eleve" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Note_Details_Matiere">
+          <End Role="Matiere" Type="Self.Matiere" Multiplicity="1" />
+          <End Role="Note_Details" Type="Self.Note_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Matiere">
+              <PropertyRef Name="nom_1" />
+            </Principal>
+            <Dependent Role="Note_Details">
+              <PropertyRef Name="matiere" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Note_Details_Semestre">
+          <End Role="Semestre" Type="Self.Semestre" Multiplicity="1" />
+          <End Role="Note_Details" Type="Self.Note_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Semestre">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Note_Details">
+              <PropertyRef Name="semestere" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Note_Exame_Annee_Scolaire">
+          <End Role="Annee_Scolaire" Type="Self.Annee_Scolaire" Multiplicity="1" />
+          <End Role="Note" Type="Self.Note" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Annee_Scolaire">
+              <PropertyRef Name="annee_Scolaire" />
+            </Principal>
+            <Dependent Role="Note">
+              <PropertyRef Name="annee" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Note_Exame_Eleve">
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="1" />
+          <End Role="Note" Type="Self.Note" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Eleve">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Note">
+              <PropertyRef Name="eleve" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Note_Exame_Semestre">
+          <End Role="Semestre" Type="Self.Semestre" Multiplicity="1" />
+          <End Role="Note" Type="Self.Note" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Semestre">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Note">
+              <PropertyRef Name="semester" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Retart_Eleve_Eleve">
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="0..1" />
+          <End Role="Retart_Eleve" Type="Self.Retart_Eleve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Eleve">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Retart_Eleve">
+              <PropertyRef Name="eleve" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Retart_Pro_Professeur">
+          <End Role="Professeur" Type="Self.Professeur" Multiplicity="0..1" />
+          <End Role="Retart_Prof" Type="Self.Retart_Prof" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Professeur">
+              <PropertyRef Name="num_Somme" />
+            </Principal>
+            <Dependent Role="Retart_Prof">
+              <PropertyRef Name="prof" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="EcoleDBModelStoreContainer">
+          <EntitySet Name="Absence_Eleve" EntityType="Self.Absence_Eleve" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Absence_Prof" EntityType="Self.Absence_Prof" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ancienne_Classe" EntityType="Self.Ancienne_Classe" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ancienne_Ecole" EntityType="Self.Ancienne_Ecole" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Annee_Scolaire" EntityType="Self.Annee_Scolaire" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Classe" EntityType="Self.Classe" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Classe_Details" EntityType="Self.Classe_Details" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ecole" EntityType="Self.Ecole" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Eleve" EntityType="Self.Eleve" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Emploi_Temps" EntityType="Self.Emploi_Temps" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Group_Cantine" EntityType="Self.Group_Cantine" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Group_Transport" EntityType="Self.Group_Transport" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Matiere" EntityType="Self.Matiere" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Mere" EntityType="Self.Mere" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Niveau" EntityType="Self.Niveau" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Note" EntityType="Self.Note" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Note_Details" EntityType="Self.Note_Details" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Pere" EntityType="Self.Pere" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Professeur" EntityType="Self.Professeur" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Retart_Eleve" EntityType="Self.Retart_Eleve" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Retart_Prof" EntityType="Self.Retart_Prof" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Salle" EntityType="Self.Salle" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Semestre" EntityType="Self.Semestre" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tuteur" EntityType="Self.Tuteur" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Absence_Eleve_Eleve" Association="Self.FK_Absence_Eleve_Eleve">
+            <End Role="Eleve" EntitySet="Eleve" />
+            <End Role="Absence_Eleve" EntitySet="Absence_Eleve" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Absence_Pro_Professeur" Association="Self.FK_Absence_Pro_Professeur">
+            <End Role="Professeur" EntitySet="Professeur" />
+            <End Role="Absence_Prof" EntitySet="Absence_Prof" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Classe_Details_Ancienne_Classe" Association="Self.FK_Classe_Details_Ancienne_Classe">
+            <End Role="Ancienne_Classe" EntitySet="Ancienne_Classe" />
+            <End Role="Classe_Details" EntitySet="Classe_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Classe_Details_Annee_Scolaire" Association="Self.FK_Classe_Details_Annee_Scolaire">
+            <End Role="Annee_Scolaire" EntitySet="Annee_Scolaire" />
+            <End Role="Classe_Details" EntitySet="Classe_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Classe_Details_Classe" Association="Self.FK_Classe_Details_Classe">
+            <End Role="Classe" EntitySet="Classe" />
+            <End Role="Classe_Details" EntitySet="Classe_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Classe_Details_Eleve" Association="Self.FK_Classe_Details_Eleve">
+            <End Role="Eleve" EntitySet="Eleve" />
+            <End Role="Classe_Details" EntitySet="Classe_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Classe_Niveau" Association="Self.FK_Classe_Niveau">
+            <End Role="Niveau" EntitySet="Niveau" />
+            <End Role="Classe" EntitySet="Classe" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Eleve_Ancienne_Ecole" Association="Self.FK_Eleve_Ancienne_Ecole">
+            <End Role="Ancienne_Ecole" EntitySet="Ancienne_Ecole" />
+            <End Role="Eleve" EntitySet="Eleve" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Eleve_Group_Cantine" Association="Self.FK_Eleve_Group_Cantine">
+            <End Role="Group_Cantine" EntitySet="Group_Cantine" />
+            <End Role="Eleve" EntitySet="Eleve" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Eleve_Group_Transport" Association="Self.FK_Eleve_Group_Transport">
+            <End Role="Group_Transport" EntitySet="Group_Transport" />
+            <End Role="Eleve" EntitySet="Eleve" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Eleve_Mere" Association="Self.FK_Eleve_Mere">
+            <End Role="Mere" EntitySet="Mere" />
+            <End Role="Eleve" EntitySet="Eleve" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Eleve_Pere" Association="Self.FK_Eleve_Pere">
+            <End Role="Pere" EntitySet="Pere" />
+            <End Role="Eleve" EntitySet="Eleve" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Eleve_Tuteur" Association="Self.FK_Eleve_Tuteur">
+            <End Role="Tuteur" EntitySet="Tuteur" />
+            <End Role="Eleve" EntitySet="Eleve" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Emploi_Temps_Classe" Association="Self.FK_Emploi_Temps_Classe">
+            <End Role="Classe" EntitySet="Classe" />
+            <End Role="Emploi_Temps" EntitySet="Emploi_Temps" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Emploi_Temps_Professeur" Association="Self.FK_Emploi_Temps_Professeur">
+            <End Role="Professeur" EntitySet="Professeur" />
+            <End Role="Emploi_Temps" EntitySet="Emploi_Temps" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Emploi_Temps_Salle" Association="Self.FK_Emploi_Temps_Salle">
+            <End Role="Salle" EntitySet="Salle" />
+            <End Role="Emploi_Temps" EntitySet="Emploi_Temps" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Note_Details_Annee_Scolaire" Association="Self.FK_Note_Details_Annee_Scolaire">
+            <End Role="Annee_Scolaire" EntitySet="Annee_Scolaire" />
+            <End Role="Note_Details" EntitySet="Note_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Note_Details_Eleve" Association="Self.FK_Note_Details_Eleve">
+            <End Role="Eleve" EntitySet="Eleve" />
+            <End Role="Note_Details" EntitySet="Note_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Note_Details_Matiere" Association="Self.FK_Note_Details_Matiere">
+            <End Role="Matiere" EntitySet="Matiere" />
+            <End Role="Note_Details" EntitySet="Note_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Note_Details_Semestre" Association="Self.FK_Note_Details_Semestre">
+            <End Role="Semestre" EntitySet="Semestre" />
+            <End Role="Note_Details" EntitySet="Note_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Note_Exame_Annee_Scolaire" Association="Self.FK_Note_Exame_Annee_Scolaire">
+            <End Role="Annee_Scolaire" EntitySet="Annee_Scolaire" />
+            <End Role="Note" EntitySet="Note" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Note_Exame_Eleve" Association="Self.FK_Note_Exame_Eleve">
+            <End Role="Eleve" EntitySet="Eleve" />
+            <End Role="Note" EntitySet="Note" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Note_Exame_Semestre" Association="Self.FK_Note_Exame_Semestre">
+            <End Role="Semestre" EntitySet="Semestre" />
+            <End Role="Note" EntitySet="Note" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Retart_Eleve_Eleve" Association="Self.FK_Retart_Eleve_Eleve">
+            <End Role="Eleve" EntitySet="Eleve" />
+            <End Role="Retart_Eleve" EntitySet="Retart_Eleve" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Retart_Pro_Professeur" Association="Self.FK_Retart_Pro_Professeur">
+            <End Role="Professeur" EntitySet="Professeur" />
+            <End Role="Retart_Prof" EntitySet="Retart_Prof" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EcoleDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Absence_Eleve">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="heure_Debut" Type="Time" Precision="7" />
+          <Property Name="heure_Fin" Type="Time" Precision="7" />
+          <Property Name="date_Absence" Type="DateTime" Precision="0" />
+          <Property Name="motife" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="eleve" Type="String" MaxLength="11" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Eleve1" Relationship="Self.FK_Absence_Eleve_Eleve" FromRole="Absence_Eleve" ToRole="Eleve" />
+        </EntityType>
+        <EntityType Name="Absence_Prof">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="heure_Debut" Type="Time" Precision="7" />
+          <Property Name="heure_Fin" Type="Time" Precision="7" />
+          <Property Name="date_Absence" Type="DateTime" Precision="0" />
+          <Property Name="motife" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="prof" Type="String" MaxLength="7" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Professeur" Relationship="Self.FK_Absence_Pro_Professeur" FromRole="Absence_Prof" ToRole="Professeur" />
+        </EntityType>
+        <EntityType Name="Ancienne_Classe">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="surnom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="niveau" Type="Int32" />
+          <NavigationProperty Name="Classe_Details" Relationship="Self.FK_Classe_Details_Ancienne_Classe" FromRole="Ancienne_Classe" ToRole="Classe_Details" />
+        </EntityType>
+        <EntityType Name="Ancienne_Ecole">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nom_Ecole_Ar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="nom_Ecole_Fr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="type_Ecole" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="statut_Ecole" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Eleves" Relationship="Self.FK_Eleve_Ancienne_Ecole" FromRole="Ancienne_Ecole" ToRole="Eleve" />
+        </EntityType>
+        <EntityType Name="Annee_Scolaire">
+          <Key>
+            <PropertyRef Name="annee_Scolaire1" />
+          </Key>
+          <Property Name="annee_Scolaire1" Type="String" MaxLength="9" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="date_Debut" Type="DateTime" Precision="0" />
+          <Property Name="date_Fin" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Classe_Details" Relationship="Self.FK_Classe_Details_Annee_Scolaire" FromRole="Annee_Scolaire" ToRole="Classe_Details" />
+          <NavigationProperty Name="Note_Details" Relationship="Self.FK_Note_Details_Annee_Scolaire" FromRole="Annee_Scolaire" ToRole="Note_Details" />
+          <NavigationProperty Name="Notes" Relationship="Self.FK_Note_Exame_Annee_Scolaire" FromRole="Annee_Scolaire" ToRole="Note" />
+        </EntityType>
+        <EntityType Name="Classe">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="surnom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="niveau" Type="Int32" />
+          <NavigationProperty Name="Classe_Details" Relationship="Self.FK_Classe_Details_Classe" FromRole="Classe" ToRole="Classe_Details" />
+          <NavigationProperty Name="Niveau1" Relationship="Self.FK_Classe_Niveau" FromRole="Classe" ToRole="Niveau" />
+          <NavigationProperty Name="Emploi_Temps" Relationship="Self.FK_Emploi_Temps_Classe" FromRole="Classe" ToRole="Emploi_Temps" />
+        </EntityType>
+        <EntityType Name="Classe_Details">
+          <Key>
+            <PropertyRef Name="eleve" />
+            <PropertyRef Name="classe" />
+            <PropertyRef Name="annee" />
+          </Key>
+          <Property Name="eleve" Type="String" MaxLength="11" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="classe" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="annee" Type="String" MaxLength="9" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="ancienne" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Ancienne_Classe" Relationship="Self.FK_Classe_Details_Ancienne_Classe" FromRole="Classe_Details" ToRole="Ancienne_Classe" />
+          <NavigationProperty Name="Annee_Scolaire" Relationship="Self.FK_Classe_Details_Annee_Scolaire" FromRole="Classe_Details" ToRole="Annee_Scolaire" />
+          <NavigationProperty Name="Classe1" Relationship="Self.FK_Classe_Details_Classe" FromRole="Classe_Details" ToRole="Classe" />
+          <NavigationProperty Name="Eleve1" Relationship="Self.FK_Classe_Details_Eleve" FromRole="Classe_Details" ToRole="Eleve" />
+        </EntityType>
+        <EntityType Name="Ecole">
+          <Key>
+            <PropertyRef Name="nom" />
+          </Key>
+          <Property Name="nom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="academie" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="direction_Provinciale" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="commoune" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ministere" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="photo" Type="Binary" MaxLength="50" FixedLength="true" />
+        </EntityType>
+        <EntityType Name="Eleve">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="String" MaxLength="11" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="num" Type="Int32" />
+          <Property Name="nom_Ar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="nom_Fr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="prenom_Ar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="prenom_Fr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="date_Naissance" Type="DateTime" Precision="0" />
+          <Property Name="lieu_Naissance_Ar" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="lieu_Naissance_Fr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="sexe" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="photo" Type="Binary" MaxLength="255" FixedLength="true" />
+          <Property Name="password" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="pere" Type="String" MaxLength="7" FixedLength="true" Unicode="true" />
+          <Property Name="mere" Type="String" MaxLength="7" FixedLength="true" Unicode="true" />
+          <Property Name="tuteur" Type="String" MaxLength="7" FixedLength="true" Unicode="true" />
+          <Property Name="type_Tuteur" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="cantine" Type="Int32" />
+          <Property Name="transport" Type="Int32" />
+          <Property Name="anciene_Ecole" Type="Int32" />
+          <NavigationProperty Name="Absence_Eleve" Relationship="Self.FK_Absence_Eleve_Eleve" FromRole="Eleve" ToRole="Absence_Eleve" />
+          <NavigationProperty Name="Ancienne_Ecole" Relationship="Self.FK_Eleve_Ancienne_Ecole" FromRole="Eleve" ToRole="Ancienne_Ecole" />
+          <NavigationProperty Name="Classe_Details" Relationship="Self.FK_Classe_Details_Eleve" FromRole="Eleve" ToRole="Classe_Details" />
+          <NavigationProperty Name="Group_Cantine" Relationship="Self.FK_Eleve_Group_Cantine" FromRole="Eleve" ToRole="Group_Cantine" />
+          <NavigationProperty Name="Group_Transport" Relationship="Self.FK_Eleve_Group_Transport" FromRole="Eleve" ToRole="Group_Transport" />
+          <NavigationProperty Name="Mere1" Relationship="Self.FK_Eleve_Mere" FromRole="Eleve" ToRole="Mere" />
+          <NavigationProperty Name="Pere1" Relationship="Self.FK_Eleve_Pere" FromRole="Eleve" ToRole="Pere" />
+          <NavigationProperty Name="Tuteur1" Relationship="Self.FK_Eleve_Tuteur" FromRole="Eleve" ToRole="Tuteur" />
+          <NavigationProperty Name="Note_Details" Relationship="Self.FK_Note_Details_Eleve" FromRole="Eleve" ToRole="Note_Details" />
+          <NavigationProperty Name="Notes" Relationship="Self.FK_Note_Exame_Eleve" FromRole="Eleve" ToRole="Note" />
+          <NavigationProperty Name="Retart_Eleve" Relationship="Self.FK_Retart_Eleve_Eleve" FromRole="Eleve" ToRole="Retart_Eleve" />
+        </EntityType>
+        <EntityType Name="Emploi_Temps">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="date_Debut" Type="DateTime" Precision="0" />
+          <Property Name="date_Fin" Type="DateTime" Precision="0" />
+          <Property Name="prof" Type="String" MaxLength="7" FixedLength="true" Unicode="true" />
+          <Property Name="classe" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="salle" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Classe1" Relationship="Self.FK_Emploi_Temps_Classe" FromRole="Emploi_Temps" ToRole="Classe" />
+          <NavigationProperty Name="Professeur" Relationship="Self.FK_Emploi_Temps_Professeur" FromRole="Emploi_Temps" ToRole="Professeur" />
+          <NavigationProperty Name="Salle1" Relationship="Self.FK_Emploi_Temps_Salle" FromRole="Emploi_Temps" ToRole="Salle" />
+        </EntityType>
+        <EntityType Name="Group_Cantine">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="surname" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Eleves" Relationship="Self.FK_Eleve_Group_Cantine" FromRole="Group_Cantine" ToRole="Eleve" />
+        </EntityType>
+        <EntityType Name="Group_Transport">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="surname" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Eleves" Relationship="Self.FK_Eleve_Group_Transport" FromRole="Group_Transport" ToRole="Eleve" />
+        </EntityType>
+        <EntityType Name="Matiere">
+          <Key>
+            <PropertyRef Name="nom_1" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nom_1" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="nom_2" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="couleur" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Note_Details" Relationship="Self.FK_Note_Details_Matiere" FromRole="Matiere" ToRole="Note_Details" />
+        </EntityType>
+        <EntityType Name="Mere">
+          <Key>
+            <PropertyRef Name="cin" />
+          </Key>
+          <Property Name="cin" Type="String" MaxLength="7" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="nom_Ar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="nom_Fr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="prenom_Ar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="prenom_Fr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="date_Naissance" Type="DateTime" Precision="0" />
+          <Property Name="lieu_Naissance_Ar" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="lieu_Naissance_Fr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="sexe" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="photo" Type="Binary" MaxLength="255" FixedLength="true" />
+          <Property Name="metier" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="tele" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="fix" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="adresse" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Eleves" Relationship="Self.FK_Eleve_Mere" FromRole="Mere" ToRole="Eleve" />
+        </EntityType>
+        <EntityType Name="Niveau">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="option" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="capacite_Classe" Type="Int32" />
+          <NavigationProperty Name="Classes" Relationship="Self.FK_Classe_Niveau" FromRole="Niveau" ToRole="Classe" />
+        </EntityType>
+        <EntityType Name="Note">
+          <Key>
+            <PropertyRef Name="eleve" />
+            <PropertyRef Name="semester" />
+            <PropertyRef Name="annee" />
+          </Key>
+          <Property Name="eleve" Type="String" MaxLength="11" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="semester" Type="Int32" Nullable="false" />
+          <Property Name="annee" Type="String" MaxLength="9" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="note1" Type="Double" />
+          <Property Name="note_Exame" Type="Double" />
+          <NavigationProperty Name="Annee_Scolaire" Relationship="Self.FK_Note_Exame_Annee_Scolaire" FromRole="Note" ToRole="Annee_Scolaire" />
+          <NavigationProperty Name="Eleve1" Relationship="Self.FK_Note_Exame_Eleve" FromRole="Note" ToRole="Eleve" />
+          <NavigationProperty Name="Semestre" Relationship="Self.FK_Note_Exame_Semestre" FromRole="Note" ToRole="Semestre" />
+        </EntityType>
+        <EntityType Name="Note_Details">
+          <Key>
+            <PropertyRef Name="eleve" />
+            <PropertyRef Name="semestere" />
+            <PropertyRef Name="annee" />
+            <PropertyRef Name="matiere" />
+          </Key>
+          <Property Name="eleve" Type="String" MaxLength="11" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="semestere" Type="Int32" Nullable="false" />
+          <Property Name="annee" Type="String" MaxLength="9" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="matiere" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ctrl1" Type="Double" />
+          <Property Name="ctrl2" Type="Double" />
+          <Property Name="ctrl3" Type="Double" />
+          <Property Name="ctrl4" Type="Double" />
+          <Property Name="note" Type="Double" />
+          <Property Name="note_Exame" Type="Double" />
+          <NavigationProperty Name="Annee_Scolaire" Relationship="Self.FK_Note_Details_Annee_Scolaire" FromRole="Note_Details" ToRole="Annee_Scolaire" />
+          <NavigationProperty Name="Eleve1" Relationship="Self.FK_Note_Details_Eleve" FromRole="Note_Details" ToRole="Eleve" />
+          <NavigationProperty Name="Matiere1" Relationship="Self.FK_Note_Details_Matiere" FromRole="Note_Details" ToRole="Matiere" />
+          <NavigationProperty Name="Semestre" Relationship="Self.FK_Note_Details_Semestre" FromRole="Note_Details" ToRole="Semestre" />
+        </EntityType>
+        <EntityType Name="Pere">
+          <Key>
+            <PropertyRef Name="cin" />
+          </Key>
+          <Property Name="cin" Type="String" MaxLength="7" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="nom_Ar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="nom_Fr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="prenom_Ar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="prenom_Fr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="date_Naissance" Type="DateTime" Precision="0" />
+          <Property Name="lieu_Naissance_Ar" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="lieu_Naissance_Fr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="sexe" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="photo" Type="Binary" MaxLength="255" FixedLength="true" />
+          <Property Name="metier" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="tele" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="fix" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="adresse" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Eleves" Relationship="Self.FK_Eleve_Pere" FromRole="Pere" ToRole="Eleve" />
+        </EntityType>
+        <EntityType Name="Professeur">
+          <Key>
+            <PropertyRef Name="num_Somme" />
+          </Key>
+          <Property Name="num_Somme" Type="String" MaxLength="7" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="cin" Type="String" MaxLength="7" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="nom_Ar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="nom_Fr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="prenom_Ar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="prenom_Fr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="date_Naissance" Type="DateTime" Precision="0" />
+          <Property Name="lieu_Naissance_Ar" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="lieu_Naissance_Fr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="sexe" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="photo" Type="Binary" MaxLength="255" FixedLength="true" />
+          <Property Name="specialite" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="tele" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="fix" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="adresse" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Absence_Prof" Relationship="Self.FK_Absence_Pro_Professeur" FromRole="Professeur" ToRole="Absence_Prof" />
+          <NavigationProperty Name="Emploi_Temps" Relationship="Self.FK_Emploi_Temps_Professeur" FromRole="Professeur" ToRole="Emploi_Temps" />
+          <NavigationProperty Name="Retart_Prof" Relationship="Self.FK_Retart_Pro_Professeur" FromRole="Professeur" ToRole="Retart_Prof" />
+        </EntityType>
+        <EntityType Name="Retart_Eleve">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="heure_Debut" Type="Time" Precision="7" />
+          <Property Name="heure_Fin" Type="Time" Precision="7" />
+          <Property Name="date_Retart" Type="DateTime" Precision="0" />
+          <Property Name="motife" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="eleve" Type="String" MaxLength="11" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Eleve1" Relationship="Self.FK_Retart_Eleve_Eleve" FromRole="Retart_Eleve" ToRole="Eleve" />
+        </EntityType>
+        <EntityType Name="Retart_Prof">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="heure_Debut" Type="Time" Precision="7" />
+          <Property Name="heure_Fin" Type="Time" Precision="7" />
+          <Property Name="date_Retart" Type="DateTime" Precision="0" />
+          <Property Name="motife" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="prof" Type="String" MaxLength="7" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Professeur" Relationship="Self.FK_Retart_Pro_Professeur" FromRole="Retart_Prof" ToRole="Professeur" />
+        </EntityType>
+        <EntityType Name="Salle">
+          <Key>
+            <PropertyRef Name="num" />
+          </Key>
+          <Property Name="num" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="capacite" Type="Int32" />
+          <NavigationProperty Name="Emploi_Temps" Relationship="Self.FK_Emploi_Temps_Salle" FromRole="Salle" ToRole="Emploi_Temps" />
+        </EntityType>
+        <EntityType Name="Semestre">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="libelle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Notes" Relationship="Self.FK_Note_Exame_Semestre" FromRole="Semestre" ToRole="Note" />
+          <NavigationProperty Name="Note_Details" Relationship="Self.FK_Note_Details_Semestre" FromRole="Semestre" ToRole="Note_Details" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Tuteur">
+          <Key>
+            <PropertyRef Name="cin" />
+          </Key>
+          <Property Name="cin" Type="String" MaxLength="7" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="nom_Ar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="nom_Fr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="prenom_Ar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="prenom_Fr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="date_Naissance" Type="DateTime" Precision="0" />
+          <Property Name="lieu_Naissance_Ar" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="lieu_Naissance_Fr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="sexe" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="photo" Type="Binary" MaxLength="255" FixedLength="true" />
+          <Property Name="metier" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="tele" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="fix" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="adresse" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Eleves" Relationship="Self.FK_Eleve_Tuteur" FromRole="Tuteur" ToRole="Eleve" />
+        </EntityType>
+        <Association Name="FK_Absence_Eleve_Eleve">
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="0..1" />
+          <End Role="Absence_Eleve" Type="Self.Absence_Eleve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Eleve">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Absence_Eleve">
+              <PropertyRef Name="eleve" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Absence_Pro_Professeur">
+          <End Role="Professeur" Type="Self.Professeur" Multiplicity="0..1" />
+          <End Role="Absence_Prof" Type="Self.Absence_Prof" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Professeur">
+              <PropertyRef Name="num_Somme" />
+            </Principal>
+            <Dependent Role="Absence_Prof">
+              <PropertyRef Name="prof" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Classe_Details_Ancienne_Classe">
+          <End Role="Ancienne_Classe" Type="Self.Ancienne_Classe" Multiplicity="0..1" />
+          <End Role="Classe_Details" Type="Self.Classe_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ancienne_Classe">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Classe_Details">
+              <PropertyRef Name="ancienne" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Eleve_Ancienne_Ecole">
+          <End Role="Ancienne_Ecole" Type="Self.Ancienne_Ecole" Multiplicity="0..1" />
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ancienne_Ecole">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Eleve">
+              <PropertyRef Name="anciene_Ecole" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Classe_Details_Annee_Scolaire">
+          <End Role="Annee_Scolaire" Type="Self.Annee_Scolaire" Multiplicity="1" />
+          <End Role="Classe_Details" Type="Self.Classe_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Annee_Scolaire">
+              <PropertyRef Name="annee_Scolaire1" />
+            </Principal>
+            <Dependent Role="Classe_Details">
+              <PropertyRef Name="annee" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Note_Details_Annee_Scolaire">
+          <End Role="Annee_Scolaire" Type="Self.Annee_Scolaire" Multiplicity="1" />
+          <End Role="Note_Details" Type="Self.Note_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Annee_Scolaire">
+              <PropertyRef Name="annee_Scolaire1" />
+            </Principal>
+            <Dependent Role="Note_Details">
+              <PropertyRef Name="annee" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Note_Exame_Annee_Scolaire">
+          <End Role="Annee_Scolaire" Type="Self.Annee_Scolaire" Multiplicity="1" />
+          <End Role="Note" Type="Self.Note" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Annee_Scolaire">
+              <PropertyRef Name="annee_Scolaire1" />
+            </Principal>
+            <Dependent Role="Note">
+              <PropertyRef Name="annee" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Classe_Details_Classe">
+          <End Role="Classe" Type="Self.Classe" Multiplicity="1" />
+          <End Role="Classe_Details" Type="Self.Classe_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Classe">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Classe_Details">
+              <PropertyRef Name="classe" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Classe_Niveau">
+          <End Role="Niveau" Type="Self.Niveau" Multiplicity="0..1" />
+          <End Role="Classe" Type="Self.Classe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Niveau">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Classe">
+              <PropertyRef Name="niveau" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Emploi_Temps_Classe">
+          <End Role="Classe" Type="Self.Classe" Multiplicity="0..1" />
+          <End Role="Emploi_Temps" Type="Self.Emploi_Temps" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Classe">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Emploi_Temps">
+              <PropertyRef Name="classe" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Classe_Details_Eleve">
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="1" />
+          <End Role="Classe_Details" Type="Self.Classe_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Eleve">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Classe_Details">
+              <PropertyRef Name="eleve" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Eleve_Group_Cantine">
+          <End Role="Group_Cantine" Type="Self.Group_Cantine" Multiplicity="0..1" />
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Group_Cantine">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Eleve">
+              <PropertyRef Name="cantine" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Eleve_Group_Transport">
+          <End Role="Group_Transport" Type="Self.Group_Transport" Multiplicity="0..1" />
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Group_Transport">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Eleve">
+              <PropertyRef Name="transport" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Eleve_Mere">
+          <End Role="Mere" Type="Self.Mere" Multiplicity="0..1" />
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Mere">
+              <PropertyRef Name="cin" />
+            </Principal>
+            <Dependent Role="Eleve">
+              <PropertyRef Name="mere" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Eleve_Pere">
+          <End Role="Pere" Type="Self.Pere" Multiplicity="0..1" />
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Pere">
+              <PropertyRef Name="cin" />
+            </Principal>
+            <Dependent Role="Eleve">
+              <PropertyRef Name="pere" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Eleve_Tuteur">
+          <End Role="Tuteur" Type="Self.Tuteur" Multiplicity="0..1" />
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tuteur">
+              <PropertyRef Name="cin" />
+            </Principal>
+            <Dependent Role="Eleve">
+              <PropertyRef Name="tuteur" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Note_Details_Eleve">
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="1" />
+          <End Role="Note_Details" Type="Self.Note_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Eleve">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Note_Details">
+              <PropertyRef Name="eleve" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Note_Exame_Eleve">
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="1" />
+          <End Role="Note" Type="Self.Note" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Eleve">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Note">
+              <PropertyRef Name="eleve" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Retart_Eleve_Eleve">
+          <End Role="Eleve" Type="Self.Eleve" Multiplicity="0..1" />
+          <End Role="Retart_Eleve" Type="Self.Retart_Eleve" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Eleve">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Retart_Eleve">
+              <PropertyRef Name="eleve" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Emploi_Temps_Professeur">
+          <End Role="Professeur" Type="Self.Professeur" Multiplicity="0..1" />
+          <End Role="Emploi_Temps" Type="Self.Emploi_Temps" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Professeur">
+              <PropertyRef Name="num_Somme" />
+            </Principal>
+            <Dependent Role="Emploi_Temps">
+              <PropertyRef Name="prof" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Emploi_Temps_Salle">
+          <End Role="Salle" Type="Self.Salle" Multiplicity="0..1" />
+          <End Role="Emploi_Temps" Type="Self.Emploi_Temps" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Salle">
+              <PropertyRef Name="num" />
+            </Principal>
+            <Dependent Role="Emploi_Temps">
+              <PropertyRef Name="salle" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Note_Details_Matiere">
+          <End Role="Matiere" Type="Self.Matiere" Multiplicity="1" />
+          <End Role="Note_Details" Type="Self.Note_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Matiere">
+              <PropertyRef Name="nom_1" />
+            </Principal>
+            <Dependent Role="Note_Details">
+              <PropertyRef Name="matiere" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Note_Exame_Semestre">
+          <End Role="Semestre" Type="Self.Semestre" Multiplicity="1" />
+          <End Role="Note" Type="Self.Note" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Semestre">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Note">
+              <PropertyRef Name="semester" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Note_Details_Semestre">
+          <End Role="Semestre" Type="Self.Semestre" Multiplicity="1" />
+          <End Role="Note_Details" Type="Self.Note_Details" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Semestre">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Note_Details">
+              <PropertyRef Name="semestere" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Retart_Pro_Professeur">
+          <End Role="Professeur" Type="Self.Professeur" Multiplicity="0..1" />
+          <End Role="Retart_Prof" Type="Self.Retart_Prof" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Professeur">
+              <PropertyRef Name="num_Somme" />
+            </Principal>
+            <Dependent Role="Retart_Prof">
+              <PropertyRef Name="prof" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="EcoleDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Absence_Eleve" EntityType="Self.Absence_Eleve" />
+          <EntitySet Name="Absence_Prof" EntityType="Self.Absence_Prof" />
+          <EntitySet Name="Ancienne_Classe" EntityType="Self.Ancienne_Classe" />
+          <EntitySet Name="Ancienne_Ecole" EntityType="Self.Ancienne_Ecole" />
+          <EntitySet Name="Annee_Scolaire" EntityType="Self.Annee_Scolaire" />
+          <EntitySet Name="Classes" EntityType="Self.Classe" />
+          <EntitySet Name="Classe_Details" EntityType="Self.Classe_Details" />
+          <EntitySet Name="Ecoles" EntityType="Self.Ecole" />
+          <EntitySet Name="Eleves" EntityType="Self.Eleve" />
+          <EntitySet Name="Emploi_Temps" EntityType="Self.Emploi_Temps" />
+          <EntitySet Name="Group_Cantine" EntityType="Self.Group_Cantine" />
+          <EntitySet Name="Group_Transport" EntityType="Self.Group_Transport" />
+          <EntitySet Name="Matieres" EntityType="Self.Matiere" />
+          <EntitySet Name="Meres" EntityType="Self.Mere" />
+          <EntitySet Name="Niveaux" EntityType="Self.Niveau" />
+          <EntitySet Name="Notes" EntityType="Self.Note" />
+          <EntitySet Name="Note_Details" EntityType="Self.Note_Details" />
+          <EntitySet Name="Peres" EntityType="Self.Pere" />
+          <EntitySet Name="Professeurs" EntityType="Self.Professeur" />
+          <EntitySet Name="Retart_Eleve" EntityType="Self.Retart_Eleve" />
+          <EntitySet Name="Retart_Prof" EntityType="Self.Retart_Prof" />
+          <EntitySet Name="Salles" EntityType="Self.Salle" />
+          <EntitySet Name="Semestres" EntityType="Self.Semestre" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="Tuteurs" EntityType="Self.Tuteur" />
+          <AssociationSet Name="FK_Absence_Eleve_Eleve" Association="Self.FK_Absence_Eleve_Eleve">
+            <End Role="Eleve" EntitySet="Eleves" />
+            <End Role="Absence_Eleve" EntitySet="Absence_Eleve" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Absence_Pro_Professeur" Association="Self.FK_Absence_Pro_Professeur">
+            <End Role="Professeur" EntitySet="Professeurs" />
+            <End Role="Absence_Prof" EntitySet="Absence_Prof" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Classe_Details_Ancienne_Classe" Association="Self.FK_Classe_Details_Ancienne_Classe">
+            <End Role="Ancienne_Classe" EntitySet="Ancienne_Classe" />
+            <End Role="Classe_Details" EntitySet="Classe_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Eleve_Ancienne_Ecole" Association="Self.FK_Eleve_Ancienne_Ecole">
+            <End Role="Ancienne_Ecole" EntitySet="Ancienne_Ecole" />
+            <End Role="Eleve" EntitySet="Eleves" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Classe_Details_Annee_Scolaire" Association="Self.FK_Classe_Details_Annee_Scolaire">
+            <End Role="Annee_Scolaire" EntitySet="Annee_Scolaire" />
+            <End Role="Classe_Details" EntitySet="Classe_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Note_Details_Annee_Scolaire" Association="Self.FK_Note_Details_Annee_Scolaire">
+            <End Role="Annee_Scolaire" EntitySet="Annee_Scolaire" />
+            <End Role="Note_Details" EntitySet="Note_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Note_Exame_Annee_Scolaire" Association="Self.FK_Note_Exame_Annee_Scolaire">
+            <End Role="Annee_Scolaire" EntitySet="Annee_Scolaire" />
+            <End Role="Note" EntitySet="Notes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Classe_Details_Classe" Association="Self.FK_Classe_Details_Classe">
+            <End Role="Classe" EntitySet="Classes" />
+            <End Role="Classe_Details" EntitySet="Classe_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Classe_Niveau" Association="Self.FK_Classe_Niveau">
+            <End Role="Niveau" EntitySet="Niveaux" />
+            <End Role="Classe" EntitySet="Classes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Emploi_Temps_Classe" Association="Self.FK_Emploi_Temps_Classe">
+            <End Role="Classe" EntitySet="Classes" />
+            <End Role="Emploi_Temps" EntitySet="Emploi_Temps" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Classe_Details_Eleve" Association="Self.FK_Classe_Details_Eleve">
+            <End Role="Eleve" EntitySet="Eleves" />
+            <End Role="Classe_Details" EntitySet="Classe_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Eleve_Group_Cantine" Association="Self.FK_Eleve_Group_Cantine">
+            <End Role="Group_Cantine" EntitySet="Group_Cantine" />
+            <End Role="Eleve" EntitySet="Eleves" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Eleve_Group_Transport" Association="Self.FK_Eleve_Group_Transport">
+            <End Role="Group_Transport" EntitySet="Group_Transport" />
+            <End Role="Eleve" EntitySet="Eleves" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Eleve_Mere" Association="Self.FK_Eleve_Mere">
+            <End Role="Mere" EntitySet="Meres" />
+            <End Role="Eleve" EntitySet="Eleves" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Eleve_Pere" Association="Self.FK_Eleve_Pere">
+            <End Role="Pere" EntitySet="Peres" />
+            <End Role="Eleve" EntitySet="Eleves" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Eleve_Tuteur" Association="Self.FK_Eleve_Tuteur">
+            <End Role="Tuteur" EntitySet="Tuteurs" />
+            <End Role="Eleve" EntitySet="Eleves" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Note_Details_Eleve" Association="Self.FK_Note_Details_Eleve">
+            <End Role="Eleve" EntitySet="Eleves" />
+            <End Role="Note_Details" EntitySet="Note_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Note_Exame_Eleve" Association="Self.FK_Note_Exame_Eleve">
+            <End Role="Eleve" EntitySet="Eleves" />
+            <End Role="Note" EntitySet="Notes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Retart_Eleve_Eleve" Association="Self.FK_Retart_Eleve_Eleve">
+            <End Role="Eleve" EntitySet="Eleves" />
+            <End Role="Retart_Eleve" EntitySet="Retart_Eleve" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Emploi_Temps_Professeur" Association="Self.FK_Emploi_Temps_Professeur">
+            <End Role="Professeur" EntitySet="Professeurs" />
+            <End Role="Emploi_Temps" EntitySet="Emploi_Temps" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Emploi_Temps_Salle" Association="Self.FK_Emploi_Temps_Salle">
+            <End Role="Salle" EntitySet="Salles" />
+            <End Role="Emploi_Temps" EntitySet="Emploi_Temps" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Note_Details_Matiere" Association="Self.FK_Note_Details_Matiere">
+            <End Role="Matiere" EntitySet="Matieres" />
+            <End Role="Note_Details" EntitySet="Note_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Note_Exame_Semestre" Association="Self.FK_Note_Exame_Semestre">
+            <End Role="Semestre" EntitySet="Semestres" />
+            <End Role="Note" EntitySet="Notes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Note_Details_Semestre" Association="Self.FK_Note_Details_Semestre">
+            <End Role="Semestre" EntitySet="Semestres" />
+            <End Role="Note_Details" EntitySet="Note_Details" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Retart_Pro_Professeur" Association="Self.FK_Retart_Pro_Professeur">
+            <End Role="Professeur" EntitySet="Professeurs" />
+            <End Role="Retart_Prof" EntitySet="Retart_Prof" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EcoleDBModelStoreContainer" CdmEntityContainer="EcoleDBEntities">
+          <EntitySetMapping Name="Absence_Eleve">
+            <EntityTypeMapping TypeName="EcoleDBModel.Absence_Eleve">
+              <MappingFragment StoreEntitySet="Absence_Eleve">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="heure_Debut" ColumnName="heure_Debut" />
+                <ScalarProperty Name="heure_Fin" ColumnName="heure_Fin" />
+                <ScalarProperty Name="date_Absence" ColumnName="date_Absence" />
+                <ScalarProperty Name="motife" ColumnName="motife" />
+                <ScalarProperty Name="eleve" ColumnName="eleve" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Absence_Prof">
+            <EntityTypeMapping TypeName="EcoleDBModel.Absence_Prof">
+              <MappingFragment StoreEntitySet="Absence_Prof">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="heure_Debut" ColumnName="heure_Debut" />
+                <ScalarProperty Name="heure_Fin" ColumnName="heure_Fin" />
+                <ScalarProperty Name="date_Absence" ColumnName="date_Absence" />
+                <ScalarProperty Name="motife" ColumnName="motife" />
+                <ScalarProperty Name="prof" ColumnName="prof" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ancienne_Classe">
+            <EntityTypeMapping TypeName="EcoleDBModel.Ancienne_Classe">
+              <MappingFragment StoreEntitySet="Ancienne_Classe">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="surnom" ColumnName="surnom" />
+                <ScalarProperty Name="niveau" ColumnName="niveau" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ancienne_Ecole">
+            <EntityTypeMapping TypeName="EcoleDBModel.Ancienne_Ecole">
+              <MappingFragment StoreEntitySet="Ancienne_Ecole">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="nom_Ecole_Ar" ColumnName="nom_Ecole_Ar" />
+                <ScalarProperty Name="nom_Ecole_Fr" ColumnName="nom_Ecole_Fr" />
+                <ScalarProperty Name="type_Ecole" ColumnName="type_Ecole" />
+                <ScalarProperty Name="statut_Ecole" ColumnName="statut_Ecole" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Annee_Scolaire">
+            <EntityTypeMapping TypeName="EcoleDBModel.Annee_Scolaire">
+              <MappingFragment StoreEntitySet="Annee_Scolaire">
+                <ScalarProperty Name="annee_Scolaire1" ColumnName="annee_Scolaire" />
+                <ScalarProperty Name="date_Debut" ColumnName="date_Debut" />
+                <ScalarProperty Name="date_Fin" ColumnName="date_Fin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Classes">
+            <EntityTypeMapping TypeName="EcoleDBModel.Classe">
+              <MappingFragment StoreEntitySet="Classe">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="surnom" ColumnName="surnom" />
+                <ScalarProperty Name="niveau" ColumnName="niveau" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Classe_Details">
+            <EntityTypeMapping TypeName="EcoleDBModel.Classe_Details">
+              <MappingFragment StoreEntitySet="Classe_Details">
+                <ScalarProperty Name="eleve" ColumnName="eleve" />
+                <ScalarProperty Name="classe" ColumnName="classe" />
+                <ScalarProperty Name="annee" ColumnName="annee" />
+                <ScalarProperty Name="ancienne" ColumnName="ancienne" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ecoles">
+            <EntityTypeMapping TypeName="EcoleDBModel.Ecole">
+              <MappingFragment StoreEntitySet="Ecole">
+                <ScalarProperty Name="nom" ColumnName="nom" />
+                <ScalarProperty Name="academie" ColumnName="academie" />
+                <ScalarProperty Name="direction_Provinciale" ColumnName="direction_Provinciale" />
+                <ScalarProperty Name="commoune" ColumnName="commoune" />
+                <ScalarProperty Name="ministere" ColumnName="ministere" />
+                <ScalarProperty Name="photo" ColumnName="photo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Eleves">
+            <EntityTypeMapping TypeName="EcoleDBModel.Eleve">
+              <MappingFragment StoreEntitySet="Eleve">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="num" ColumnName="num" />
+                <ScalarProperty Name="nom_Ar" ColumnName="nom_Ar" />
+                <ScalarProperty Name="nom_Fr" ColumnName="nom_Fr" />
+                <ScalarProperty Name="prenom_Ar" ColumnName="prenom_Ar" />
+                <ScalarProperty Name="prenom_Fr" ColumnName="prenom_Fr" />
+                <ScalarProperty Name="date_Naissance" ColumnName="date_Naissance" />
+                <ScalarProperty Name="lieu_Naissance_Ar" ColumnName="lieu_Naissance_Ar" />
+                <ScalarProperty Name="lieu_Naissance_Fr" ColumnName="lieu_Naissance_Fr" />
+                <ScalarProperty Name="sexe" ColumnName="sexe" />
+                <ScalarProperty Name="photo" ColumnName="photo" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="pere" ColumnName="pere" />
+                <ScalarProperty Name="mere" ColumnName="mere" />
+                <ScalarProperty Name="tuteur" ColumnName="tuteur" />
+                <ScalarProperty Name="type_Tuteur" ColumnName="type_Tuteur" />
+                <ScalarProperty Name="cantine" ColumnName="cantine" />
+                <ScalarProperty Name="transport" ColumnName="transport" />
+                <ScalarProperty Name="anciene_Ecole" ColumnName="anciene_Ecole" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Emploi_Temps">
+            <EntityTypeMapping TypeName="EcoleDBModel.Emploi_Temps">
+              <MappingFragment StoreEntitySet="Emploi_Temps">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="date_Debut" ColumnName="date_Debut" />
+                <ScalarProperty Name="date_Fin" ColumnName="date_Fin" />
+                <ScalarProperty Name="prof" ColumnName="prof" />
+                <ScalarProperty Name="classe" ColumnName="classe" />
+                <ScalarProperty Name="salle" ColumnName="salle" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Group_Cantine">
+            <EntityTypeMapping TypeName="EcoleDBModel.Group_Cantine">
+              <MappingFragment StoreEntitySet="Group_Cantine">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="surname" ColumnName="surname" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Group_Transport">
+            <EntityTypeMapping TypeName="EcoleDBModel.Group_Transport">
+              <MappingFragment StoreEntitySet="Group_Transport">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="surname" ColumnName="surname" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Matieres">
+            <EntityTypeMapping TypeName="EcoleDBModel.Matiere">
+              <MappingFragment StoreEntitySet="Matiere">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="nom_1" ColumnName="nom_1" />
+                <ScalarProperty Name="nom_2" ColumnName="nom_2" />
+                <ScalarProperty Name="couleur" ColumnName="couleur" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Meres">
+            <EntityTypeMapping TypeName="EcoleDBModel.Mere">
+              <MappingFragment StoreEntitySet="Mere">
+                <ScalarProperty Name="cin" ColumnName="cin" />
+                <ScalarProperty Name="nom_Ar" ColumnName="nom_Ar" />
+                <ScalarProperty Name="nom_Fr" ColumnName="nom_Fr" />
+                <ScalarProperty Name="prenom_Ar" ColumnName="prenom_Ar" />
+                <ScalarProperty Name="prenom_Fr" ColumnName="prenom_Fr" />
+                <ScalarProperty Name="date_Naissance" ColumnName="date_Naissance" />
+                <ScalarProperty Name="lieu_Naissance_Ar" ColumnName="lieu_Naissance_Ar" />
+                <ScalarProperty Name="lieu_Naissance_Fr" ColumnName="lieu_Naissance_Fr" />
+                <ScalarProperty Name="sexe" ColumnName="sexe" />
+                <ScalarProperty Name="photo" ColumnName="photo" />
+                <ScalarProperty Name="metier" ColumnName="metier" />
+                <ScalarProperty Name="tele" ColumnName="tele" />
+                <ScalarProperty Name="fix" ColumnName="fix" />
+                <ScalarProperty Name="adresse" ColumnName="adresse" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Niveaux">
+            <EntityTypeMapping TypeName="EcoleDBModel.Niveau">
+              <MappingFragment StoreEntitySet="Niveau">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="libelle" ColumnName="libelle" />
+                <ScalarProperty Name="option" ColumnName="option" />
+                <ScalarProperty Name="capacite_Classe" ColumnName="capacite_Classe" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Notes">
+            <EntityTypeMapping TypeName="EcoleDBModel.Note">
+              <MappingFragment StoreEntitySet="Note">
+                <ScalarProperty Name="eleve" ColumnName="eleve" />
+                <ScalarProperty Name="semester" ColumnName="semester" />
+                <ScalarProperty Name="annee" ColumnName="annee" />
+                <ScalarProperty Name="note1" ColumnName="note" />
+                <ScalarProperty Name="note_Exame" ColumnName="note_Exame" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Note_Details">
+            <EntityTypeMapping TypeName="EcoleDBModel.Note_Details">
+              <MappingFragment StoreEntitySet="Note_Details">
+                <ScalarProperty Name="eleve" ColumnName="eleve" />
+                <ScalarProperty Name="semestere" ColumnName="semestere" />
+                <ScalarProperty Name="annee" ColumnName="annee" />
+                <ScalarProperty Name="matiere" ColumnName="matiere" />
+                <ScalarProperty Name="ctrl1" ColumnName="ctrl1" />
+                <ScalarProperty Name="ctrl2" ColumnName="ctrl2" />
+                <ScalarProperty Name="ctrl3" ColumnName="ctrl3" />
+                <ScalarProperty Name="ctrl4" ColumnName="ctrl4" />
+                <ScalarProperty Name="note" ColumnName="note" />
+                <ScalarProperty Name="note_Exame" ColumnName="note_Exame" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Peres">
+            <EntityTypeMapping TypeName="EcoleDBModel.Pere">
+              <MappingFragment StoreEntitySet="Pere">
+                <ScalarProperty Name="cin" ColumnName="cin" />
+                <ScalarProperty Name="nom_Ar" ColumnName="nom_Ar" />
+                <ScalarProperty Name="nom_Fr" ColumnName="nom_Fr" />
+                <ScalarProperty Name="prenom_Ar" ColumnName="prenom_Ar" />
+                <ScalarProperty Name="prenom_Fr" ColumnName="prenom_Fr" />
+                <ScalarProperty Name="date_Naissance" ColumnName="date_Naissance" />
+                <ScalarProperty Name="lieu_Naissance_Ar" ColumnName="lieu_Naissance_Ar" />
+                <ScalarProperty Name="lieu_Naissance_Fr" ColumnName="lieu_Naissance_Fr" />
+                <ScalarProperty Name="sexe" ColumnName="sexe" />
+                <ScalarProperty Name="photo" ColumnName="photo" />
+                <ScalarProperty Name="metier" ColumnName="metier" />
+                <ScalarProperty Name="tele" ColumnName="tele" />
+                <ScalarProperty Name="fix" ColumnName="fix" />
+                <ScalarProperty Name="adresse" ColumnName="adresse" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Professeurs">
+            <EntityTypeMapping TypeName="EcoleDBModel.Professeur">
+              <MappingFragment StoreEntitySet="Professeur">
+                <ScalarProperty Name="num_Somme" ColumnName="num_Somme" />
+                <ScalarProperty Name="cin" ColumnName="cin" />
+                <ScalarProperty Name="nom_Ar" ColumnName="nom_Ar" />
+                <ScalarProperty Name="nom_Fr" ColumnName="nom_Fr" />
+                <ScalarProperty Name="prenom_Ar" ColumnName="prenom_Ar" />
+                <ScalarProperty Name="prenom_Fr" ColumnName="prenom_Fr" />
+                <ScalarProperty Name="date_Naissance" ColumnName="date_Naissance" />
+                <ScalarProperty Name="lieu_Naissance_Ar" ColumnName="lieu_Naissance_Ar" />
+                <ScalarProperty Name="lieu_Naissance_Fr" ColumnName="lieu_Naissance_Fr" />
+                <ScalarProperty Name="sexe" ColumnName="sexe" />
+                <ScalarProperty Name="photo" ColumnName="photo" />
+                <ScalarProperty Name="specialite" ColumnName="specialite" />
+                <ScalarProperty Name="tele" ColumnName="tele" />
+                <ScalarProperty Name="fix" ColumnName="fix" />
+                <ScalarProperty Name="adresse" ColumnName="adresse" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Retart_Eleve">
+            <EntityTypeMapping TypeName="EcoleDBModel.Retart_Eleve">
+              <MappingFragment StoreEntitySet="Retart_Eleve">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="heure_Debut" ColumnName="heure_Debut" />
+                <ScalarProperty Name="heure_Fin" ColumnName="heure_Fin" />
+                <ScalarProperty Name="date_Retart" ColumnName="date_Retart" />
+                <ScalarProperty Name="motife" ColumnName="motife" />
+                <ScalarProperty Name="eleve" ColumnName="eleve" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Retart_Prof">
+            <EntityTypeMapping TypeName="EcoleDBModel.Retart_Prof">
+              <MappingFragment StoreEntitySet="Retart_Prof">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="heure_Debut" ColumnName="heure_Debut" />
+                <ScalarProperty Name="heure_Fin" ColumnName="heure_Fin" />
+                <ScalarProperty Name="date_Retart" ColumnName="date_Retart" />
+                <ScalarProperty Name="motife" ColumnName="motife" />
+                <ScalarProperty Name="prof" ColumnName="prof" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Salles">
+            <EntityTypeMapping TypeName="EcoleDBModel.Salle">
+              <MappingFragment StoreEntitySet="Salle">
+                <ScalarProperty Name="num" ColumnName="num" />
+                <ScalarProperty Name="capacite" ColumnName="capacite" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Semestres">
+            <EntityTypeMapping TypeName="EcoleDBModel.Semestre">
+              <MappingFragment StoreEntitySet="Semestre">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="libelle" ColumnName="libelle" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="EcoleDBModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tuteurs">
+            <EntityTypeMapping TypeName="EcoleDBModel.Tuteur">
+              <MappingFragment StoreEntitySet="Tuteur">
+                <ScalarProperty Name="cin" ColumnName="cin" />
+                <ScalarProperty Name="nom_Ar" ColumnName="nom_Ar" />
+                <ScalarProperty Name="nom_Fr" ColumnName="nom_Fr" />
+                <ScalarProperty Name="prenom_Ar" ColumnName="prenom_Ar" />
+                <ScalarProperty Name="prenom_Fr" ColumnName="prenom_Fr" />
+                <ScalarProperty Name="date_Naissance" ColumnName="date_Naissance" />
+                <ScalarProperty Name="lieu_Naissance_Ar" ColumnName="lieu_Naissance_Ar" />
+                <ScalarProperty Name="lieu_Naissance_Fr" ColumnName="lieu_Naissance_Fr" />
+                <ScalarProperty Name="sexe" ColumnName="sexe" />
+                <ScalarProperty Name="photo" ColumnName="photo" />
+                <ScalarProperty Name="metier" ColumnName="metier" />
+                <ScalarProperty Name="tele" ColumnName="tele" />
+                <ScalarProperty Name="fix" ColumnName="fix" />
+                <ScalarProperty Name="adresse" ColumnName="adresse" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
