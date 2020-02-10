@@ -122,6 +122,7 @@
     <Compile Include="Massar\InfoEleve.cs" />
     <Compile Include="Massar\ListEleve.cs" />
     <Compile Include="Massar\MoyenneCc.cs" />
+    <Compile Include="Massar\NoteExam.cs" />
     <Compile Include="Massar\Tuteurs.cs" />
     <Compile Include="Matiere.cs">
       <DependentUpon>EcoleDB.tt</DependentUpon>
