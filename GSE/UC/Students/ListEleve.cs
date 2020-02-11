@@ -1,27 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GSE
+namespace GSE.UC.Students
 {
-    public partial class MainForm : Form
+    public partial class ListEleve : UserControl
     {
         EcoleDBEntities entities;
-        public MainForm()
+        public ListEleve()
         {
             InitializeComponent();
             entities = new EcoleDBEntities();
         }
-
-        private void MainForm_Load(object sender, EventArgs e)
+        private void ListEleve_Load(object sender, EventArgs e)
         {
-            cBox_Annee.DataSource = entities.Annee_Scolaire.Select(x => new { x.annee_Scolaire1 }).ToList();
+            cBox_Niveaus.DataSource = entities.Niveaux.Select(x => new { x.id });
+            cBox_Classes.DataSource = entities.Classes.Select(x => new { x.id }).ToList();
         }
     }
 }
