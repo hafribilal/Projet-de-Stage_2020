@@ -12,16 +12,13 @@ namespace GSE.UC.Students
 {
     public partial class ListEleve : UserControl
     {
-        EcoleDBEntities entities;
         public ListEleve()
         {
             InitializeComponent();
-            entities = new EcoleDBEntities();
         }
         private void ListEleve_Load(object sender, EventArgs e)
         {
-            cBox_Niveaus.DataSource = entities.Niveaux.Select(x => new { x.id });
-            cBox_Classes.DataSource = entities.Classes.Select(x => new { x.id }).ToList();
+
         }
     }
 }

@@ -15,13 +15,15 @@ namespace GSE
         EcoleDBEntities entities;
         public MainForm()
         {
+            this.entities = new EcoleDBEntities();
             InitializeComponent();
-            entities = new EcoleDBEntities();
+            this.entities = Program.entities;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            cBox_Annee.DataSource = entities.Annee_Scolaire.Select(x => new { x.annee_Scolaire1 }).ToList();
+            EcoleDBEntities entities = new EcoleDBEntities();
+            cBox_Annee.DataSource = entities.Annee_Scolaire.Select(x => x.annee_Scolaire1).ToList();
         }
     }
 }
