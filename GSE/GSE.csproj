@@ -158,14 +158,20 @@
     <Compile Include="Salle.cs">
       <DependentUpon>EcoleDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Search.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Forms\Search.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Search.Designer.cs">
+    <Compile Include="Forms\Search.Designer.cs">
       <DependentUpon>Search.cs</DependentUpon>
     </Compile>
     <Compile Include="Semestre.cs">
       <DependentUpon>EcoleDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\StudentsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\StudentsList.Designer.cs">
+      <DependentUpon>StudentsList.cs</DependentUpon>
     </Compile>
     <Compile Include="sysdiagram.cs">
       <DependentUpon>EcoleDB.tt</DependentUpon>
@@ -186,8 +192,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Search.resx">
+    <EmbeddedResource Include="Forms\Search.resx">
       <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\StudentsList.resx">
+      <DependentUpon>StudentsList.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="EcoleDB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -221,13 +230,18 @@
       <DependentUpon>EcoleDB.edmx</DependentUpon>
       <LastGenOutput>EcoleDB.cs</LastGenOutput>
     </Content>
+    <None Include="Footages\notification_80px.png" />
+    <None Include="Footages\settings_80px.png" />
+    <None Include="Footages\name_tag_80px.png" />
+    <None Include="Footages\exam_80px.png" />
+    <None Include="Footages\school_sessions_80px.png" />
+    <None Include="Footages\id_not_verified_80px.png" />
+    <None Include="Footages\student_male_80px.png" />
     <None Include="Footages\shutdown_40px.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UC\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -11,6 +11,18 @@ namespace GSE
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        private static Search search;
+
+        public static Search Search 
+        { 
+            get 
+            { 
+                if (search is null) 
+                    return new Search();
+                return search; 
+            } 
+        }
+
         [STAThread]
         static void Main()
         {

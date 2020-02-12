@@ -117,29 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="id_not_verified_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Footages\id_not_verified_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="shutdown_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Footages\shutdown_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="student_male_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Footages\student_male_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="exam_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Footages\exam_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="settings_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Footages\settings_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="name_tag_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Footages\name_tag_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="school_sessions_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Footages\school_sessions_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="notification_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Footages\notification_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>
