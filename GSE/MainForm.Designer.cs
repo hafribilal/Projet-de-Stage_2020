@@ -32,12 +32,20 @@
             this.p_Nav = new System.Windows.Forms.Panel();
             this.p_SubNav = new System.Windows.Forms.Panel();
             this.cBox_Annee = new System.Windows.Forms.ComboBox();
+            this.lbl_Logo = new System.Windows.Forms.Label();
+            this.tBox_Search = new System.Windows.Forms.TextBox();
+            this.btn_Search = new System.Windows.Forms.Button();
+            this.btn_Close = new System.Windows.Forms.Button();
             this.p_Header.SuspendLayout();
             this.SuspendLayout();
             // 
             // p_Header
             // 
             this.p_Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.p_Header.Controls.Add(this.btn_Close);
+            this.p_Header.Controls.Add(this.btn_Search);
+            this.p_Header.Controls.Add(this.tBox_Search);
+            this.p_Header.Controls.Add(this.lbl_Logo);
             this.p_Header.Controls.Add(this.cBox_Annee);
             this.p_Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.p_Header.Location = new System.Drawing.Point(0, 0);
@@ -67,10 +75,56 @@
             // 
             this.cBox_Annee.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cBox_Annee.FormattingEnabled = true;
-            this.cBox_Annee.Location = new System.Drawing.Point(832, 12);
+            this.cBox_Annee.Location = new System.Drawing.Point(832, 16);
             this.cBox_Annee.Name = "cBox_Annee";
             this.cBox_Annee.Size = new System.Drawing.Size(200, 37);
             this.cBox_Annee.TabIndex = 0;
+            // 
+            // lbl_Logo
+            // 
+            this.lbl_Logo.AutoSize = true;
+            this.lbl_Logo.Font = new System.Drawing.Font("Rakkas", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Logo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_Logo.Location = new System.Drawing.Point(12, 6);
+            this.lbl_Logo.Name = "lbl_Logo";
+            this.lbl_Logo.Size = new System.Drawing.Size(92, 55);
+            this.lbl_Logo.TabIndex = 1;
+            this.lbl_Logo.Text = "GSE";
+            // 
+            // tBox_Search
+            // 
+            this.tBox_Search.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tBox_Search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tBox_Search.Font = new System.Drawing.Font("Microsoft YaHei Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tBox_Search.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.tBox_Search.Location = new System.Drawing.Point(111, 9);
+            this.tBox_Search.Name = "tBox_Search";
+            this.tBox_Search.Size = new System.Drawing.Size(421, 50);
+            this.tBox_Search.TabIndex = 2;
+            this.tBox_Search.Text = "Type somethings ...";
+            // 
+            // btn_Search
+            // 
+            this.btn_Search.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Search.Location = new System.Drawing.Point(538, 9);
+            this.btn_Search.Name = "btn_Search";
+            this.btn_Search.Size = new System.Drawing.Size(143, 50);
+            this.btn_Search.TabIndex = 3;
+            this.btn_Search.Text = "Search";
+            this.btn_Search.UseVisualStyleBackColor = true;
+            // 
+            // btn_Close
+            // 
+            this.btn_Close.BackgroundImage = global::GSE.Properties.Resources.shutdown_40px;
+            this.btn_Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_Close.FlatAppearance.BorderSize = 0;
+            this.btn_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Close.Location = new System.Drawing.Point(1052, 16);
+            this.btn_Close.Name = "btn_Close";
+            this.btn_Close.Size = new System.Drawing.Size(50, 37);
+            this.btn_Close.TabIndex = 4;
+            this.btn_Close.UseVisualStyleBackColor = true;
+            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
             // 
             // MainForm
             // 
@@ -86,6 +140,7 @@
             this.Text = "GSE";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.p_Header.ResumeLayout(false);
+            this.p_Header.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -96,6 +151,10 @@
         private System.Windows.Forms.Panel p_Nav;
         private System.Windows.Forms.Panel p_SubNav;
         private System.Windows.Forms.ComboBox cBox_Annee;
+        private System.Windows.Forms.Button btn_Search;
+        private System.Windows.Forms.TextBox tBox_Search;
+        private System.Windows.Forms.Label lbl_Logo;
+        private System.Windows.Forms.Button btn_Close;
     }
 }
 

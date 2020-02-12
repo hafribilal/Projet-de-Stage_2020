@@ -23,5 +23,10 @@ namespace GSE
         {
             cBox_Annee.DataSource = entities.Annee_Scolaire.Select(x => x.annee_Scolaire1).ToList();
         }
+
+        private void btn_Close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
