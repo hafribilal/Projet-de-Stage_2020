@@ -31,10 +31,14 @@
             this.p_Header = new System.Windows.Forms.Panel();
             this.p_Nav = new System.Windows.Forms.Panel();
             this.p_SubNav = new System.Windows.Forms.Panel();
+            this.cBox_Annee = new System.Windows.Forms.ComboBox();
+            this.p_Header.SuspendLayout();
             this.SuspendLayout();
             // 
             // p_Header
             // 
+            this.p_Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
+            this.p_Header.Controls.Add(this.cBox_Annee);
             this.p_Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.p_Header.Location = new System.Drawing.Point(0, 0);
             this.p_Header.Name = "p_Header";
@@ -43,6 +47,7 @@
             // 
             // p_Nav
             // 
+            this.p_Nav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(68)))), ((int)(((byte)(83)))));
             this.p_Nav.Dock = System.Windows.Forms.DockStyle.Right;
             this.p_Nav.Location = new System.Drawing.Point(1032, 66);
             this.p_Nav.Name = "p_Nav";
@@ -51,16 +56,27 @@
             // 
             // p_SubNav
             // 
+            this.p_SubNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(81)))), ((int)(((byte)(98)))));
             this.p_SubNav.Dock = System.Windows.Forms.DockStyle.Right;
             this.p_SubNav.Location = new System.Drawing.Point(832, 66);
             this.p_SubNav.Name = "p_SubNav";
             this.p_SubNav.Size = new System.Drawing.Size(200, 575);
             this.p_SubNav.TabIndex = 2;
             // 
+            // cBox_Annee
+            // 
+            this.cBox_Annee.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cBox_Annee.FormattingEnabled = true;
+            this.cBox_Annee.Location = new System.Drawing.Point(832, 12);
+            this.cBox_Annee.Name = "cBox_Annee";
+            this.cBox_Annee.Size = new System.Drawing.Size(200, 37);
+            this.cBox_Annee.TabIndex = 0;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(119)))), ((int)(((byte)(144)))));
             this.ClientSize = new System.Drawing.Size(1122, 641);
             this.Controls.Add(this.p_SubNav);
             this.Controls.Add(this.p_Nav);
@@ -68,6 +84,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.Text = "GSE";
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.p_Header.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -77,6 +95,7 @@
         private System.Windows.Forms.Panel p_Header;
         private System.Windows.Forms.Panel p_Nav;
         private System.Windows.Forms.Panel p_SubNav;
+        private System.Windows.Forms.ComboBox cBox_Annee;
     }
 }
 

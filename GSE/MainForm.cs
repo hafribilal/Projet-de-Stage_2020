@@ -12,9 +12,16 @@ namespace GSE
 {
     public partial class MainForm : Form
     {
+        EcoleDBEntities entities;
         public MainForm()
         {
             InitializeComponent();
+            entities = new EcoleDBEntities();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            cBox_Annee.DataSource = entities.Annee_Scolaire.Select(x => x.annee_Scolaire1).ToList();
         }
     }
 }
