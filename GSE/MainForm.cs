@@ -28,5 +28,26 @@ namespace GSE
         {
             Application.Exit();
         }
+        string search_Placeholder = "Type somethings ...";
+        private void tBox_Search_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void tBox_Search_Enter(object sender, EventArgs e)
+        {
+            if (tBox_Search.Text.Equals(search_Placeholder))
+            {
+                tBox_Search.Text = "";
+            }
+        }
+
+        private void tBox_Search_Leave(object sender, EventArgs e)
+        {
+            if (tBox_Search.Text.Equals(""))
+            {
+                tBox_Search.Text = search_Placeholder;
+            }
+        }
     }
 }

@@ -102,6 +102,9 @@
             this.tBox_Search.Size = new System.Drawing.Size(421, 50);
             this.tBox_Search.TabIndex = 2;
             this.tBox_Search.Text = "Type somethings ...";
+            this.tBox_Search.TextChanged += new System.EventHandler(this.tBox_Search_TextChanged);
+            this.tBox_Search.Enter += new System.EventHandler(this.tBox_Search_Enter);
+            this.tBox_Search.Leave += new System.EventHandler(this.tBox_Search_Leave);
             // 
             // btn_Search
             // 

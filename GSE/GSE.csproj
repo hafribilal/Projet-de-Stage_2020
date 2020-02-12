@@ -158,6 +158,12 @@
     <Compile Include="Salle.cs">
       <DependentUpon>EcoleDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
     <Compile Include="Semestre.cs">
       <DependentUpon>EcoleDB.tt</DependentUpon>
     </Compile>
@@ -180,6 +186,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="EcoleDB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>EcoleDB.Designer.cs</LastGenOutput>
