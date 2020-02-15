@@ -12,7 +12,7 @@ namespace GSE
         /// The main entry point for the application.
         /// </summary>
         private static Search search;
-
+        public static string Annee { get; set; }
         public static Search Search 
         { 
             get 

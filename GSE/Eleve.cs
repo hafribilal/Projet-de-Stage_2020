@@ -43,6 +43,8 @@ namespace GSE
         public Nullable<int> cantine { get; set; }
         public Nullable<int> transport { get; set; }
         public Nullable<int> anciene_Ecole { get; set; }
+        public string status { get; set; }
+        public Nullable<bool> registred { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Absence_Eleve> Absence_Eleve { get; set; }

@@ -83,6 +83,16 @@ namespace GSE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap microsoft_excel_80px {
+            get {
+                object obj = ResourceManager.GetObject("microsoft_excel_80px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap name_tag_80px {
             get {
                 object obj = ResourceManager.GetObject("name_tag_80px", resourceCulture);
@@ -96,6 +106,16 @@ namespace GSE.Properties {
         internal static System.Drawing.Bitmap notification_80px {
             get {
                 object obj = ResourceManager.GetObject("notification_80px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap print_80px {
+            get {
+                object obj = ResourceManager.GetObject("print_80px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +153,29 @@ namespace GSE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap statistics_80px {
+            get {
+                object obj = ResourceManager.GetObject("statistics_80px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap student_male_80px {
             get {
                 object obj = ResourceManager.GetObject("student_male_80px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap synchronize_80px {
+            get {
+                object obj = ResourceManager.GetObject("synchronize_80px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

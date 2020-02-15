@@ -11,6 +11,7 @@ namespace Massar
     public class DataAdabter
     {
         private EcoleDBEntities dbEntities;
+        bool Arrivals = true;
 
         public DataAdabter()
         {
@@ -206,6 +207,7 @@ namespace Massar
             if (annee is null)
             {
                 dbEntities.Annee_Scolaire.Add(annee_Scolaire);
+                Arrivals = false;
             }
             dbEntities.SaveChanges();
         }
@@ -222,7 +224,7 @@ namespace Massar
                 if(eleve.nom_Ar != null)
                     e.nom_Ar = eleve.nom_Ar;
                 if (eleve.prenom_Ar != null)
-                    e.prenom_Ar = eleve.nom_Ar;
+                    e.prenom_Ar = eleve.prenom_Ar;
                 if (eleve.date_Naissance != null)
                     e.date_Naissance = eleve.date_Naissance;
                 if (eleve.lieu_Naissance_Ar != null)
@@ -239,6 +241,11 @@ namespace Massar
                     e.pere = eleve.pere;
                 if (eleve.mere != null)
                     e.mere = eleve.mere;
+                if (!Arrivals) // there is a problem
+                    e.registred = false;
+                else
+                    e.status = "وافد";
+               
             }
             dbEntities.SaveChanges();
         }

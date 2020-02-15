@@ -230,6 +230,10 @@
       <DependentUpon>EcoleDB.edmx</DependentUpon>
       <LastGenOutput>EcoleDB.cs</LastGenOutput>
     </Content>
+    <None Include="Footages\microsoft_excel_80px.png" />
+    <None Include="Footages\statistics_80px.png" />
+    <None Include="Footages\print_80px.png" />
+    <None Include="Footages\synchronize_80px.png" />
     <None Include="Footages\notification_80px.png" />
     <None Include="Footages\settings_80px.png" />
     <None Include="Footages\name_tag_80px.png" />

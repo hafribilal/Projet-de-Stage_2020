@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="EcoleDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="EcoleDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Absence_Eleve">
           <Key>
             <PropertyRef Name="id" />
@@ -99,6 +99,8 @@
           <Property Name="sexe" Type="nvarchar" MaxLength="10" />
           <Property Name="photo" Type="binary" MaxLength="255" />
           <Property Name="password" Type="nvarchar" MaxLength="15" />
+          <Property Name="status" Type="nvarchar" MaxLength="10" />
+          <Property Name="registred" Type="bit" />
           <Property Name="pere" Type="nchar" MaxLength="7" />
           <Property Name="mere" Type="nchar" MaxLength="7" />
           <Property Name="tuteur" Type="nchar" MaxLength="7" />
@@ -730,8 +732,7 @@
             <End Role="Retart_Prof" EntitySet="Retart_Prof" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="EcoleDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -861,6 +862,8 @@
           <NavigationProperty Name="Note_Details" Relationship="Self.FK_Note_Details_Eleve" FromRole="Eleve" ToRole="Note_Details" />
           <NavigationProperty Name="Notes" Relationship="Self.FK_Note_Exame_Eleve" FromRole="Eleve" ToRole="Note" />
           <NavigationProperty Name="Retart_Eleve" Relationship="Self.FK_Retart_Eleve_Eleve" FromRole="Eleve" ToRole="Retart_Eleve" />
+          <Property Name="status" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="registred" Type="Boolean" />
         </EntityType>
         <EntityType Name="Emploi_Temps">
           <Key>
@@ -1603,6 +1606,8 @@
           <EntitySetMapping Name="Eleves">
             <EntityTypeMapping TypeName="EcoleDBModel.Eleve">
               <MappingFragment StoreEntitySet="Eleve">
+                <ScalarProperty Name="registred" ColumnName="registred" />
+                <ScalarProperty Name="status" ColumnName="status" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="num" ColumnName="num" />
                 <ScalarProperty Name="nom_Ar" ColumnName="nom_Ar" />

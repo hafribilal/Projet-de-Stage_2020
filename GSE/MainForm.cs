@@ -13,17 +13,22 @@ namespace GSE
     public partial class MainForm : Form
     {
         EcoleDBEntities entities;
+        // Draging Form
+        private bool dragging = false;
+        private Point dragCursorPoint;
+        private Point dragFormPoint;
+
         public MainForm()
         {
             InitializeComponent();
             entities = new EcoleDBEntities();
-            
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
 
-            cBox_Annee.DataSource = entities.Annee_Scolaire.Select(x => x.annee_Scolaire1).ToList();
+            combo_Annee.DataSource = entities.Annee_Scolaire.Select(x => x.annee_Scolaire1).ToList();
+            Program.Annee = combo_Annee.SelectedItem.ToString();
             SubNav();
             
         }
@@ -43,6 +48,8 @@ namespace GSE
             form.MdiParent = this;
             form.Show();
             form.Dock = DockStyle.Fill;
+            form.BringToFront();
+            gBox_SchoolName.Visible = false;
         }
 
         private void btn_Close_Click(object sender, EventArgs e)
@@ -124,6 +131,132 @@ namespace GSE
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void combo_Annee_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Program.Annee = combo_Annee.SelectedItem.ToString();
+        }
+
+        private void p_Header_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragging = true;
+            dragCursorPoint = Cursor.Position;
+            dragFormPoint = this.Location;
+        }
+
+        private void p_Header_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging)
+            {
+                Point dif = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
+                this.Location = Point.Add(dragFormPoint, new Size(dif));
+            }
+        }
+
+        private void p_Header_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragging = false;
+        }
+
+        private void btn_SortFolders_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_SignIn_ResignIn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_StudentsMovement_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Arrivals_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Departures_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_SchoolFiles_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Passwords_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_ClassroomSistribution_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_ClassroomSchedules_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_StudentsAbsences_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_AbsenceSheet_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_ConsultingAbsentees_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Marksheets_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_TrackExamSheets_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_ExamsManagement_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_ExamsGarding_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_ControlsNotes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_ExamsNotes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_CouncilResolution_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_EmployeesList_Click(object sender, EventArgs e)
         {
 
         }

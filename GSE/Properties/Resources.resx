@@ -130,16 +130,28 @@
   <data name="exam_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Footages\exam_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="synchronize_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Footages\synchronize_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notification_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Footages\notification_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="statistics_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Footages\statistics_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="settings_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Footages\settings_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="name_tag_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Footages\name_tag_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="print_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Footages\print_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="school_sessions_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Footages\school_sessions_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="notification_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Footages\notification_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="microsoft_excel_80px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Footages\microsoft_excel_80px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
