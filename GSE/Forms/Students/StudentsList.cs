@@ -44,18 +44,7 @@ namespace GSE
 
         private void Check_Female_CheckedChanged(object sender, EventArgs e)
         {
-            if (Check_Female.Checked)
-            {
-                FilterByGender("أنثى");
-            }
-            else
-            {
-
-            }
-        }
-        void FilterByGender(string gender)
-        {
-            dgv.DataSource = entities.Classe_Details.Where(x => x.classe == combo_Classes.SelectedItem.ToString() && x.annee == Program.Annee).Join(entities.Eleves, cd => cd.eleve, el => el.id, (cd, el) => new { eleve = el, detail = cd }).Where(x => x.eleve.sexe == gender).Select(x => new { x.eleve.num, x.eleve.id, x.eleve.prenom_Ar, x.eleve.nom_Ar, x.eleve.sexe, x.eleve.date_Naissance, x.eleve.lieu_Naissance_Ar }).ToList();
+            
         }
 
         private void btn_Import_Click(object sender, EventArgs e)

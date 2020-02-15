@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.p_Header = new System.Windows.Forms.Panel();
+            this.pnl_HeaderRight = new System.Windows.Forms.Panel();
+            this.combo_Annee = new System.Windows.Forms.ComboBox();
             this.btn_Close = new System.Windows.Forms.Button();
             this.btn_Search = new System.Windows.Forms.Button();
             this.tBox_Search = new System.Windows.Forms.TextBox();
             this.lbl_Logo = new System.Windows.Forms.Label();
-            this.combo_Annee = new System.Windows.Forms.ComboBox();
             this.p_Nav = new System.Windows.Forms.Panel();
             this.btn_Notifications = new System.Windows.Forms.Button();
             this.btn_Settings = new System.Windows.Forms.Button();
@@ -45,10 +46,22 @@
             this.p_SubNav = new System.Windows.Forms.Panel();
             this.pnl_Settings = new System.Windows.Forms.Panel();
             this.pnl_Employees = new System.Windows.Forms.Panel();
+            this.btn_EmployeesList = new System.Windows.Forms.Button();
             this.pnl_Exames = new System.Windows.Forms.Panel();
+            this.btn_CouncilResolution = new System.Windows.Forms.Button();
+            this.btn_ExamsNotes = new System.Windows.Forms.Button();
+            this.btn_ControlsNotes = new System.Windows.Forms.Button();
+            this.btn_ExamsGarding = new System.Windows.Forms.Button();
+            this.btn_ExamsManagement = new System.Windows.Forms.Button();
+            this.btn_TrackExamSheets = new System.Windows.Forms.Button();
+            this.btn_Marksheets = new System.Windows.Forms.Button();
             this.pnl_Absences = new System.Windows.Forms.Panel();
+            this.btn_ConsultingAbsentees = new System.Windows.Forms.Button();
+            this.btn_AbsenceSheet = new System.Windows.Forms.Button();
             this.btn_StudentsAbsences = new System.Windows.Forms.Button();
             this.pnl_Sessions = new System.Windows.Forms.Panel();
+            this.btn_ClassroomSchedules = new System.Windows.Forms.Button();
+            this.btn_ClassroomSistribution = new System.Windows.Forms.Button();
             this.pnl_Students = new System.Windows.Forms.Panel();
             this.btn_Passwords = new System.Windows.Forms.Button();
             this.btn_SchoolFiles = new System.Windows.Forms.Button();
@@ -61,19 +74,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.gBox_SchoolName = new System.Windows.Forms.GroupBox();
-            this.btn_ClassroomSistribution = new System.Windows.Forms.Button();
-            this.btn_ClassroomSchedules = new System.Windows.Forms.Button();
-            this.btn_AbsenceSheet = new System.Windows.Forms.Button();
-            this.btn_ConsultingAbsentees = new System.Windows.Forms.Button();
-            this.btn_Marksheets = new System.Windows.Forms.Button();
-            this.btn_TrackExamSheets = new System.Windows.Forms.Button();
-            this.btn_ExamsManagement = new System.Windows.Forms.Button();
-            this.btn_ExamsGarding = new System.Windows.Forms.Button();
-            this.btn_ControlsNotes = new System.Windows.Forms.Button();
-            this.btn_ExamsNotes = new System.Windows.Forms.Button();
-            this.btn_CouncilResolution = new System.Windows.Forms.Button();
-            this.btn_EmployeesList = new System.Windows.Forms.Button();
+            this.pnl_Nav_Bottom = new System.Windows.Forms.Panel();
             this.p_Header.SuspendLayout();
+            this.pnl_HeaderRight.SuspendLayout();
             this.p_Nav.SuspendLayout();
             this.p_SubNav.SuspendLayout();
             this.pnl_Employees.SuspendLayout();
@@ -82,24 +85,45 @@
             this.pnl_Sessions.SuspendLayout();
             this.pnl_Students.SuspendLayout();
             this.gBox_SchoolName.SuspendLayout();
+            this.pnl_Nav_Bottom.SuspendLayout();
             this.SuspendLayout();
             // 
             // p_Header
             // 
             this.p_Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(43)))), ((int)(((byte)(52)))));
-            this.p_Header.Controls.Add(this.btn_Close);
+            this.p_Header.Controls.Add(this.pnl_HeaderRight);
             this.p_Header.Controls.Add(this.btn_Search);
             this.p_Header.Controls.Add(this.tBox_Search);
             this.p_Header.Controls.Add(this.lbl_Logo);
-            this.p_Header.Controls.Add(this.combo_Annee);
             this.p_Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.p_Header.Location = new System.Drawing.Point(0, 0);
             this.p_Header.Name = "p_Header";
             this.p_Header.Size = new System.Drawing.Size(1223, 66);
             this.p_Header.TabIndex = 0;
+            this.p_Header.DoubleClick += new System.EventHandler(this.p_Header_DoubleClick);
             this.p_Header.MouseDown += new System.Windows.Forms.MouseEventHandler(this.p_Header_MouseDown);
             this.p_Header.MouseMove += new System.Windows.Forms.MouseEventHandler(this.p_Header_MouseMove);
             this.p_Header.MouseUp += new System.Windows.Forms.MouseEventHandler(this.p_Header_MouseUp);
+            // 
+            // pnl_HeaderRight
+            // 
+            this.pnl_HeaderRight.Controls.Add(this.combo_Annee);
+            this.pnl_HeaderRight.Controls.Add(this.btn_Close);
+            this.pnl_HeaderRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnl_HeaderRight.Location = new System.Drawing.Point(933, 0);
+            this.pnl_HeaderRight.Name = "pnl_HeaderRight";
+            this.pnl_HeaderRight.Size = new System.Drawing.Size(290, 66);
+            this.pnl_HeaderRight.TabIndex = 5;
+            // 
+            // combo_Annee
+            // 
+            this.combo_Annee.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo_Annee.FormattingEnabled = true;
+            this.combo_Annee.Location = new System.Drawing.Point(-1, 14);
+            this.combo_Annee.Name = "combo_Annee";
+            this.combo_Annee.Size = new System.Drawing.Size(200, 37);
+            this.combo_Annee.TabIndex = 0;
+            this.combo_Annee.SelectedIndexChanged += new System.EventHandler(this.combo_Annee_SelectedIndexChanged);
             // 
             // btn_Close
             // 
@@ -107,7 +131,7 @@
             this.btn_Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_Close.FlatAppearance.BorderSize = 0;
             this.btn_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Close.Location = new System.Drawing.Point(1153, 14);
+            this.btn_Close.Location = new System.Drawing.Point(221, 14);
             this.btn_Close.Name = "btn_Close";
             this.btn_Close.Size = new System.Drawing.Size(50, 37);
             this.btn_Close.TabIndex = 4;
@@ -151,21 +175,10 @@
             this.lbl_Logo.TabIndex = 1;
             this.lbl_Logo.Text = "GSE";
             // 
-            // combo_Annee
-            // 
-            this.combo_Annee.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.combo_Annee.FormattingEnabled = true;
-            this.combo_Annee.Location = new System.Drawing.Point(933, 14);
-            this.combo_Annee.Name = "combo_Annee";
-            this.combo_Annee.Size = new System.Drawing.Size(200, 37);
-            this.combo_Annee.TabIndex = 0;
-            this.combo_Annee.SelectedIndexChanged += new System.EventHandler(this.combo_Annee_SelectedIndexChanged);
-            // 
             // p_Nav
             // 
             this.p_Nav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(68)))), ((int)(((byte)(83)))));
-            this.p_Nav.Controls.Add(this.btn_Notifications);
-            this.p_Nav.Controls.Add(this.btn_Settings);
+            this.p_Nav.Controls.Add(this.pnl_Nav_Bottom);
             this.p_Nav.Controls.Add(this.btn_Employees);
             this.p_Nav.Controls.Add(this.btn_Exames);
             this.p_Nav.Controls.Add(this.btn_Sessions);
@@ -184,7 +197,7 @@
             this.btn_Notifications.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Notifications.FlatAppearance.BorderSize = 0;
             this.btn_Notifications.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Notifications.Location = new System.Drawing.Point(8, 496);
+            this.btn_Notifications.Location = new System.Drawing.Point(8, 22);
             this.btn_Notifications.Margin = new System.Windows.Forms.Padding(0);
             this.btn_Notifications.Name = "btn_Notifications";
             this.btn_Notifications.Size = new System.Drawing.Size(74, 34);
@@ -199,7 +212,7 @@
             this.btn_Settings.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Settings.FlatAppearance.BorderSize = 0;
             this.btn_Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Settings.Location = new System.Drawing.Point(8, 548);
+            this.btn_Settings.Location = new System.Drawing.Point(8, 74);
             this.btn_Settings.Margin = new System.Windows.Forms.Padding(0);
             this.btn_Settings.Name = "btn_Settings";
             this.btn_Settings.Size = new System.Drawing.Size(74, 34);
@@ -314,6 +327,20 @@
             this.pnl_Employees.Size = new System.Drawing.Size(200, 67);
             this.pnl_Employees.TabIndex = 5;
             // 
+            // btn_EmployeesList
+            // 
+            this.btn_EmployeesList.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_EmployeesList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_EmployeesList.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_EmployeesList.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_EmployeesList.Location = new System.Drawing.Point(0, 6);
+            this.btn_EmployeesList.Name = "btn_EmployeesList";
+            this.btn_EmployeesList.Size = new System.Drawing.Size(200, 40);
+            this.btn_EmployeesList.TabIndex = 1;
+            this.btn_EmployeesList.Text = "لوائح الموظفين";
+            this.btn_EmployeesList.UseVisualStyleBackColor = true;
+            this.btn_EmployeesList.Click += new System.EventHandler(this.btn_EmployeesList_Click);
+            // 
             // pnl_Exames
             // 
             this.pnl_Exames.Controls.Add(this.btn_CouncilResolution);
@@ -329,6 +356,104 @@
             this.pnl_Exames.Size = new System.Drawing.Size(200, 334);
             this.pnl_Exames.TabIndex = 4;
             // 
+            // btn_CouncilResolution
+            // 
+            this.btn_CouncilResolution.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_CouncilResolution.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_CouncilResolution.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CouncilResolution.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_CouncilResolution.Location = new System.Drawing.Point(0, 282);
+            this.btn_CouncilResolution.Name = "btn_CouncilResolution";
+            this.btn_CouncilResolution.Size = new System.Drawing.Size(200, 40);
+            this.btn_CouncilResolution.TabIndex = 1;
+            this.btn_CouncilResolution.Text = "قرار مجلس القسم";
+            this.btn_CouncilResolution.UseVisualStyleBackColor = true;
+            this.btn_CouncilResolution.Click += new System.EventHandler(this.btn_CouncilResolution_Click);
+            // 
+            // btn_ExamsNotes
+            // 
+            this.btn_ExamsNotes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ExamsNotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ExamsNotes.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ExamsNotes.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_ExamsNotes.Location = new System.Drawing.Point(0, 236);
+            this.btn_ExamsNotes.Name = "btn_ExamsNotes";
+            this.btn_ExamsNotes.Size = new System.Drawing.Size(200, 40);
+            this.btn_ExamsNotes.TabIndex = 1;
+            this.btn_ExamsNotes.Text = "نقط الإمتحان الموحد";
+            this.btn_ExamsNotes.UseVisualStyleBackColor = true;
+            this.btn_ExamsNotes.Click += new System.EventHandler(this.btn_ExamsNotes_Click);
+            // 
+            // btn_ControlsNotes
+            // 
+            this.btn_ControlsNotes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ControlsNotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ControlsNotes.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ControlsNotes.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_ControlsNotes.Location = new System.Drawing.Point(0, 190);
+            this.btn_ControlsNotes.Name = "btn_ControlsNotes";
+            this.btn_ControlsNotes.Size = new System.Drawing.Size(200, 40);
+            this.btn_ControlsNotes.TabIndex = 1;
+            this.btn_ControlsNotes.Text = "نقط المراقبة المستمرة";
+            this.btn_ControlsNotes.UseVisualStyleBackColor = true;
+            this.btn_ControlsNotes.Click += new System.EventHandler(this.btn_ControlsNotes_Click);
+            // 
+            // btn_ExamsGarding
+            // 
+            this.btn_ExamsGarding.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ExamsGarding.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ExamsGarding.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ExamsGarding.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_ExamsGarding.Location = new System.Drawing.Point(0, 144);
+            this.btn_ExamsGarding.Name = "btn_ExamsGarding";
+            this.btn_ExamsGarding.Size = new System.Drawing.Size(200, 40);
+            this.btn_ExamsGarding.TabIndex = 1;
+            this.btn_ExamsGarding.Text = "تنظيم الحراسة";
+            this.btn_ExamsGarding.UseVisualStyleBackColor = true;
+            this.btn_ExamsGarding.Click += new System.EventHandler(this.btn_ExamsGarding_Click);
+            // 
+            // btn_ExamsManagement
+            // 
+            this.btn_ExamsManagement.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ExamsManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ExamsManagement.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ExamsManagement.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_ExamsManagement.Location = new System.Drawing.Point(0, 98);
+            this.btn_ExamsManagement.Name = "btn_ExamsManagement";
+            this.btn_ExamsManagement.Size = new System.Drawing.Size(200, 40);
+            this.btn_ExamsManagement.TabIndex = 1;
+            this.btn_ExamsManagement.Text = "تنظيم الإمتحانات";
+            this.btn_ExamsManagement.UseVisualStyleBackColor = true;
+            this.btn_ExamsManagement.Click += new System.EventHandler(this.btn_ExamsManagement_Click);
+            // 
+            // btn_TrackExamSheets
+            // 
+            this.btn_TrackExamSheets.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_TrackExamSheets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_TrackExamSheets.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TrackExamSheets.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_TrackExamSheets.Location = new System.Drawing.Point(0, 52);
+            this.btn_TrackExamSheets.Name = "btn_TrackExamSheets";
+            this.btn_TrackExamSheets.Size = new System.Drawing.Size(200, 40);
+            this.btn_TrackExamSheets.TabIndex = 1;
+            this.btn_TrackExamSheets.Text = "تتبع اوراق التحرير";
+            this.btn_TrackExamSheets.UseVisualStyleBackColor = true;
+            this.btn_TrackExamSheets.Click += new System.EventHandler(this.btn_TrackExamSheets_Click);
+            // 
+            // btn_Marksheets
+            // 
+            this.btn_Marksheets.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Marksheets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Marksheets.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Marksheets.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_Marksheets.Location = new System.Drawing.Point(0, 6);
+            this.btn_Marksheets.Name = "btn_Marksheets";
+            this.btn_Marksheets.Size = new System.Drawing.Size(200, 40);
+            this.btn_Marksheets.TabIndex = 1;
+            this.btn_Marksheets.Text = "اوراق التقيط الدورية";
+            this.btn_Marksheets.UseVisualStyleBackColor = true;
+            this.btn_Marksheets.Click += new System.EventHandler(this.btn_Marksheets_Click);
+            // 
             // pnl_Absences
             // 
             this.pnl_Absences.Controls.Add(this.btn_ConsultingAbsentees);
@@ -339,6 +464,34 @@
             this.pnl_Absences.Name = "pnl_Absences";
             this.pnl_Absences.Size = new System.Drawing.Size(200, 149);
             this.pnl_Absences.TabIndex = 3;
+            // 
+            // btn_ConsultingAbsentees
+            // 
+            this.btn_ConsultingAbsentees.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ConsultingAbsentees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ConsultingAbsentees.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ConsultingAbsentees.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_ConsultingAbsentees.Location = new System.Drawing.Point(0, 97);
+            this.btn_ConsultingAbsentees.Name = "btn_ConsultingAbsentees";
+            this.btn_ConsultingAbsentees.Size = new System.Drawing.Size(200, 40);
+            this.btn_ConsultingAbsentees.TabIndex = 0;
+            this.btn_ConsultingAbsentees.Text = "مراسلة المتغيبين";
+            this.btn_ConsultingAbsentees.UseVisualStyleBackColor = true;
+            this.btn_ConsultingAbsentees.Click += new System.EventHandler(this.btn_ConsultingAbsentees_Click);
+            // 
+            // btn_AbsenceSheet
+            // 
+            this.btn_AbsenceSheet.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_AbsenceSheet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_AbsenceSheet.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AbsenceSheet.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_AbsenceSheet.Location = new System.Drawing.Point(0, 51);
+            this.btn_AbsenceSheet.Name = "btn_AbsenceSheet";
+            this.btn_AbsenceSheet.Size = new System.Drawing.Size(200, 40);
+            this.btn_AbsenceSheet.TabIndex = 0;
+            this.btn_AbsenceSheet.Text = "ورقة الغياب";
+            this.btn_AbsenceSheet.UseVisualStyleBackColor = true;
+            this.btn_AbsenceSheet.Click += new System.EventHandler(this.btn_AbsenceSheet_Click);
             // 
             // btn_StudentsAbsences
             // 
@@ -363,6 +516,34 @@
             this.pnl_Sessions.Name = "pnl_Sessions";
             this.pnl_Sessions.Size = new System.Drawing.Size(200, 93);
             this.pnl_Sessions.TabIndex = 1;
+            // 
+            // btn_ClassroomSchedules
+            // 
+            this.btn_ClassroomSchedules.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ClassroomSchedules.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ClassroomSchedules.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ClassroomSchedules.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_ClassroomSchedules.Location = new System.Drawing.Point(0, 52);
+            this.btn_ClassroomSchedules.Name = "btn_ClassroomSchedules";
+            this.btn_ClassroomSchedules.Size = new System.Drawing.Size(200, 40);
+            this.btn_ClassroomSchedules.TabIndex = 1;
+            this.btn_ClassroomSchedules.Text = "جداول الحصص";
+            this.btn_ClassroomSchedules.UseVisualStyleBackColor = true;
+            this.btn_ClassroomSchedules.Click += new System.EventHandler(this.btn_ClassroomSchedules_Click);
+            // 
+            // btn_ClassroomSistribution
+            // 
+            this.btn_ClassroomSistribution.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ClassroomSistribution.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ClassroomSistribution.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ClassroomSistribution.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_ClassroomSistribution.Location = new System.Drawing.Point(0, 6);
+            this.btn_ClassroomSistribution.Name = "btn_ClassroomSistribution";
+            this.btn_ClassroomSistribution.Size = new System.Drawing.Size(200, 40);
+            this.btn_ClassroomSistribution.TabIndex = 1;
+            this.btn_ClassroomSistribution.Text = "توزيع الأقسام";
+            this.btn_ClassroomSistribution.UseVisualStyleBackColor = true;
+            this.btn_ClassroomSistribution.Click += new System.EventHandler(this.btn_ClassroomSistribution_Click);
             // 
             // pnl_Students
             // 
@@ -531,173 +712,15 @@
             this.gBox_SchoolName.TabIndex = 7;
             this.gBox_SchoolName.TabStop = false;
             // 
-            // btn_ClassroomSistribution
+            // pnl_Nav_Bottom
             // 
-            this.btn_ClassroomSistribution.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ClassroomSistribution.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ClassroomSistribution.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ClassroomSistribution.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_ClassroomSistribution.Location = new System.Drawing.Point(0, 6);
-            this.btn_ClassroomSistribution.Name = "btn_ClassroomSistribution";
-            this.btn_ClassroomSistribution.Size = new System.Drawing.Size(200, 40);
-            this.btn_ClassroomSistribution.TabIndex = 1;
-            this.btn_ClassroomSistribution.Text = "توزيع الأقسام";
-            this.btn_ClassroomSistribution.UseVisualStyleBackColor = true;
-            this.btn_ClassroomSistribution.Click += new System.EventHandler(this.btn_ClassroomSistribution_Click);
-            // 
-            // btn_ClassroomSchedules
-            // 
-            this.btn_ClassroomSchedules.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ClassroomSchedules.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ClassroomSchedules.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ClassroomSchedules.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_ClassroomSchedules.Location = new System.Drawing.Point(0, 52);
-            this.btn_ClassroomSchedules.Name = "btn_ClassroomSchedules";
-            this.btn_ClassroomSchedules.Size = new System.Drawing.Size(200, 40);
-            this.btn_ClassroomSchedules.TabIndex = 1;
-            this.btn_ClassroomSchedules.Text = "جداول الحصص";
-            this.btn_ClassroomSchedules.UseVisualStyleBackColor = true;
-            this.btn_ClassroomSchedules.Click += new System.EventHandler(this.btn_ClassroomSchedules_Click);
-            // 
-            // btn_AbsenceSheet
-            // 
-            this.btn_AbsenceSheet.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_AbsenceSheet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_AbsenceSheet.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_AbsenceSheet.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_AbsenceSheet.Location = new System.Drawing.Point(0, 51);
-            this.btn_AbsenceSheet.Name = "btn_AbsenceSheet";
-            this.btn_AbsenceSheet.Size = new System.Drawing.Size(200, 40);
-            this.btn_AbsenceSheet.TabIndex = 0;
-            this.btn_AbsenceSheet.Text = "ورقة الغياب";
-            this.btn_AbsenceSheet.UseVisualStyleBackColor = true;
-            this.btn_AbsenceSheet.Click += new System.EventHandler(this.btn_AbsenceSheet_Click);
-            // 
-            // btn_ConsultingAbsentees
-            // 
-            this.btn_ConsultingAbsentees.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ConsultingAbsentees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ConsultingAbsentees.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ConsultingAbsentees.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_ConsultingAbsentees.Location = new System.Drawing.Point(0, 97);
-            this.btn_ConsultingAbsentees.Name = "btn_ConsultingAbsentees";
-            this.btn_ConsultingAbsentees.Size = new System.Drawing.Size(200, 40);
-            this.btn_ConsultingAbsentees.TabIndex = 0;
-            this.btn_ConsultingAbsentees.Text = "مراسلة المتغيبين";
-            this.btn_ConsultingAbsentees.UseVisualStyleBackColor = true;
-            this.btn_ConsultingAbsentees.Click += new System.EventHandler(this.btn_ConsultingAbsentees_Click);
-            // 
-            // btn_Marksheets
-            // 
-            this.btn_Marksheets.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Marksheets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Marksheets.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Marksheets.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_Marksheets.Location = new System.Drawing.Point(0, 6);
-            this.btn_Marksheets.Name = "btn_Marksheets";
-            this.btn_Marksheets.Size = new System.Drawing.Size(200, 40);
-            this.btn_Marksheets.TabIndex = 1;
-            this.btn_Marksheets.Text = "اوراق التقيط الدورية";
-            this.btn_Marksheets.UseVisualStyleBackColor = true;
-            this.btn_Marksheets.Click += new System.EventHandler(this.btn_Marksheets_Click);
-            // 
-            // btn_TrackExamSheets
-            // 
-            this.btn_TrackExamSheets.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_TrackExamSheets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_TrackExamSheets.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_TrackExamSheets.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_TrackExamSheets.Location = new System.Drawing.Point(0, 52);
-            this.btn_TrackExamSheets.Name = "btn_TrackExamSheets";
-            this.btn_TrackExamSheets.Size = new System.Drawing.Size(200, 40);
-            this.btn_TrackExamSheets.TabIndex = 1;
-            this.btn_TrackExamSheets.Text = "تتبع اوراق التحرير";
-            this.btn_TrackExamSheets.UseVisualStyleBackColor = true;
-            this.btn_TrackExamSheets.Click += new System.EventHandler(this.btn_TrackExamSheets_Click);
-            // 
-            // btn_ExamsManagement
-            // 
-            this.btn_ExamsManagement.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ExamsManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ExamsManagement.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ExamsManagement.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_ExamsManagement.Location = new System.Drawing.Point(0, 98);
-            this.btn_ExamsManagement.Name = "btn_ExamsManagement";
-            this.btn_ExamsManagement.Size = new System.Drawing.Size(200, 40);
-            this.btn_ExamsManagement.TabIndex = 1;
-            this.btn_ExamsManagement.Text = "تنظيم الإمتحانات";
-            this.btn_ExamsManagement.UseVisualStyleBackColor = true;
-            this.btn_ExamsManagement.Click += new System.EventHandler(this.btn_ExamsManagement_Click);
-            // 
-            // btn_ExamsGarding
-            // 
-            this.btn_ExamsGarding.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ExamsGarding.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ExamsGarding.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ExamsGarding.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_ExamsGarding.Location = new System.Drawing.Point(0, 144);
-            this.btn_ExamsGarding.Name = "btn_ExamsGarding";
-            this.btn_ExamsGarding.Size = new System.Drawing.Size(200, 40);
-            this.btn_ExamsGarding.TabIndex = 1;
-            this.btn_ExamsGarding.Text = "تنظيم الحراسة";
-            this.btn_ExamsGarding.UseVisualStyleBackColor = true;
-            this.btn_ExamsGarding.Click += new System.EventHandler(this.btn_ExamsGarding_Click);
-            // 
-            // btn_ControlsNotes
-            // 
-            this.btn_ControlsNotes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ControlsNotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ControlsNotes.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ControlsNotes.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_ControlsNotes.Location = new System.Drawing.Point(0, 190);
-            this.btn_ControlsNotes.Name = "btn_ControlsNotes";
-            this.btn_ControlsNotes.Size = new System.Drawing.Size(200, 40);
-            this.btn_ControlsNotes.TabIndex = 1;
-            this.btn_ControlsNotes.Text = "نقط المراقبة المستمرة";
-            this.btn_ControlsNotes.UseVisualStyleBackColor = true;
-            this.btn_ControlsNotes.Click += new System.EventHandler(this.btn_ControlsNotes_Click);
-            // 
-            // btn_ExamsNotes
-            // 
-            this.btn_ExamsNotes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ExamsNotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ExamsNotes.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ExamsNotes.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_ExamsNotes.Location = new System.Drawing.Point(0, 236);
-            this.btn_ExamsNotes.Name = "btn_ExamsNotes";
-            this.btn_ExamsNotes.Size = new System.Drawing.Size(200, 40);
-            this.btn_ExamsNotes.TabIndex = 1;
-            this.btn_ExamsNotes.Text = "نقط الإمتحان الموحد";
-            this.btn_ExamsNotes.UseVisualStyleBackColor = true;
-            this.btn_ExamsNotes.Click += new System.EventHandler(this.btn_ExamsNotes_Click);
-            // 
-            // btn_CouncilResolution
-            // 
-            this.btn_CouncilResolution.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_CouncilResolution.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CouncilResolution.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_CouncilResolution.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_CouncilResolution.Location = new System.Drawing.Point(0, 282);
-            this.btn_CouncilResolution.Name = "btn_CouncilResolution";
-            this.btn_CouncilResolution.Size = new System.Drawing.Size(200, 40);
-            this.btn_CouncilResolution.TabIndex = 1;
-            this.btn_CouncilResolution.Text = "قرار مجلس القسم";
-            this.btn_CouncilResolution.UseVisualStyleBackColor = true;
-            this.btn_CouncilResolution.Click += new System.EventHandler(this.btn_CouncilResolution_Click);
-            // 
-            // btn_EmployeesList
-            // 
-            this.btn_EmployeesList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_EmployeesList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_EmployeesList.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_EmployeesList.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_EmployeesList.Location = new System.Drawing.Point(0, 6);
-            this.btn_EmployeesList.Name = "btn_EmployeesList";
-            this.btn_EmployeesList.Size = new System.Drawing.Size(200, 40);
-            this.btn_EmployeesList.TabIndex = 1;
-            this.btn_EmployeesList.Text = "لوائح الموظفين";
-            this.btn_EmployeesList.UseVisualStyleBackColor = true;
-            this.btn_EmployeesList.Click += new System.EventHandler(this.btn_EmployeesList_Click);
+            this.pnl_Nav_Bottom.Controls.Add(this.btn_Settings);
+            this.pnl_Nav_Bottom.Controls.Add(this.btn_Notifications);
+            this.pnl_Nav_Bottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnl_Nav_Bottom.Location = new System.Drawing.Point(0, 480);
+            this.pnl_Nav_Bottom.Name = "pnl_Nav_Bottom";
+            this.pnl_Nav_Bottom.Size = new System.Drawing.Size(90, 117);
+            this.pnl_Nav_Bottom.TabIndex = 1;
             // 
             // MainForm
             // 
@@ -716,6 +739,7 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.p_Header.ResumeLayout(false);
             this.p_Header.PerformLayout();
+            this.pnl_HeaderRight.ResumeLayout(false);
             this.p_Nav.ResumeLayout(false);
             this.p_SubNav.ResumeLayout(false);
             this.pnl_Employees.ResumeLayout(false);
@@ -725,6 +749,7 @@
             this.pnl_Students.ResumeLayout(false);
             this.gBox_SchoolName.ResumeLayout(false);
             this.gBox_SchoolName.PerformLayout();
+            this.pnl_Nav_Bottom.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -776,6 +801,8 @@
         private System.Windows.Forms.Button btn_Marksheets;
         private System.Windows.Forms.Button btn_ConsultingAbsentees;
         private System.Windows.Forms.Button btn_AbsenceSheet;
+        private System.Windows.Forms.Panel pnl_HeaderRight;
+        private System.Windows.Forms.Panel pnl_Nav_Bottom;
     }
 }
 

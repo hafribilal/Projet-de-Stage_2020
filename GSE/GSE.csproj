@@ -107,6 +107,48 @@
     <Compile Include="Emploi_Temps.cs">
       <DependentUpon>EcoleDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Students\Arrivals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\Arrivals.Designer.cs">
+      <DependentUpon>Arrivals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\Departures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\Departures.Designer.cs">
+      <DependentUpon>Departures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\Passwords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\Passwords.Designer.cs">
+      <DependentUpon>Passwords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\SchoolFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\SchoolFiles.Designer.cs">
+      <DependentUpon>SchoolFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\SignIn_ResignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\SignIn_ResignIn.Designer.cs">
+      <DependentUpon>SignIn_ResignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\SortingFolders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\SortingFolders.Designer.cs">
+      <DependentUpon>SortingFolders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Students\StudentsMovement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Students\StudentsMovement.Designer.cs">
+      <DependentUpon>StudentsMovement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Group_Cantine.cs">
       <DependentUpon>EcoleDB.tt</DependentUpon>
     </Compile>
@@ -179,6 +221,27 @@
     <Compile Include="Tuteur.cs">
       <DependentUpon>EcoleDB.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\Students\Arrivals.resx">
+      <DependentUpon>Arrivals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\Departures.resx">
+      <DependentUpon>Departures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\Passwords.resx">
+      <DependentUpon>Passwords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\SchoolFiles.resx">
+      <DependentUpon>SchoolFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\SignIn_ResignIn.resx">
+      <DependentUpon>SignIn_ResignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\SortingFolders.resx">
+      <DependentUpon>SortingFolders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Students\StudentsMovement.resx">
+      <DependentUpon>StudentsMovement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -260,5 +260,23 @@ namespace GSE
         {
 
         }
+        bool Maximized = false;
+        private void p_Header_DoubleClick(object sender, EventArgs e)
+        {
+            if (!Maximized)
+            {
+                Left = Top = 0;
+                Width = Screen.PrimaryScreen.WorkingArea.Width;
+                Height = Screen.PrimaryScreen.WorkingArea.Height;
+                Maximized = true;
+            }
+            else
+            {
+                Left = Top = 50;
+                Width = 1223;
+                Height = 663;
+                Maximized = false;
+            }
+        }
     }
 }
