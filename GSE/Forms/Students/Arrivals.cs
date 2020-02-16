@@ -26,5 +26,10 @@ namespace GSE.Forms.Students
         {
 
         }
+
+        private void btn_Sync_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

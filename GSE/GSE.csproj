@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -215,6 +218,1929 @@
     <Compile Include="Forms\Students\StudentsList.Designer.cs">
       <DependentUpon>StudentsList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Statistics\Absences\absence_fiche1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_fiche1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_fiche1_a5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_fiche1_a5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_fiche1_g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_fiche1_g.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_liste1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_liste1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_liste_anne1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_liste_anne1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_liste_avr1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_liste_avr1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_liste_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_liste_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_liste_fev1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_liste_fev1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_liste_jan1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_liste_jan1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_liste_jui1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_liste_jui1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_liste_mai1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_liste_mai1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_liste_mar1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_liste_mar1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_liste_notif1_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_liste_notif1_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_liste_notif2_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_liste_notif2_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_liste_notif3_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_liste_notif3_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_liste_notif4_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_liste_notif4_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_liste_nov1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_liste_nov1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_liste_oct1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_liste_oct1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_liste_sep1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_liste_sep1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_msg_notif1_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_msg_notif1_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_msg_notif2_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_msg_notif2_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_msg_notif3_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_msg_notif3_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_msg_notif4_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_msg_notif4_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_papier1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_papier2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_papier2_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier2_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_search_anne1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_search_anne1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_search_avr1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_search_avr1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_search_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_search_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_search_fev1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_search_fev1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_search_jan1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_search_jan1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_search_jui1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_search_jui1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_search_mai1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_search_mai1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_search_mar1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_search_mar1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_search_nov1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_search_nov1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_search_oct1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_search_oct1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_search_sep1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_search_sep1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_stat_g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_stat_g.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_stat_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_stat_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_stat_g1_2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_stat_g1_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\absence_stat_g1_3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_stat_g1_3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier1_2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier1_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier1_2_emploi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier1_2_emploi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier1_7j.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier1_7j.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier1_emploi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier1_emploi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier2_2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier2_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier2_2_emploi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier2_2_emploi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier2_7j.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier2_7j.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier2_7j_ans.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier2_7j_ans.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier2_emploi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier2_emploi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier3_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier3_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier3_2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier3_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier3_2_emploi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier3_2_emploi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier3_7j.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier3_7j.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier3_emploi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier3_emploi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier4_2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier4_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier4_2_emploi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier4_2_emploi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Absences\papiers\absence_papier4_emploi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>absence_papier4_emploi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Arrivels\wafidon_liste1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>wafidon_liste1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Classes\classe_liste1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>classe_liste1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Classes\classe_liste_rep1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>classe_liste_rep1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Classes\classe_repartition1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>classe_repartition1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Classes\classe_repartition1_2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>classe_repartition1_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Classes\classe_repartition1_3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>classe_repartition1_3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Classes\classe_search1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>classe_search1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Classes\classe_stat_2_age_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>classe_stat_2_age_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Classes\classe_stat_2_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>classe_stat_2_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Classes\classe_stat_age_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>classe_stat_age_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Classes\classe_stat_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>classe_stat_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Departures\moghadiron_liste1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>moghadiron_liste1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Departures\moghadiron_stat_1_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>moghadiron_stat_1_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Departures\moghadiron_stat_2_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>moghadiron_stat_2_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Departures\moghadiron_stat_academey_1_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>moghadiron_stat_academey_1_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Departures\moghadiron_stat_academey_2_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>moghadiron_stat_academey_2_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Departures\moghadiron_stat_commune_1_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>moghadiron_stat_commune_1_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Departures\moghadiron_stat_commune_2_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>moghadiron_stat_commune_2_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Departures\moghadiron_stat_delegation_1_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>moghadiron_stat_delegation_1_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Departures\moghadiron_stat_delegation_2_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>moghadiron_stat_delegation_2_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Departures\moghadiron_stat_ecole_1_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>moghadiron_stat_ecole_1_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Departures\moghadiron_stat_ecole_2_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>moghadiron_stat_ecole_2_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\DossierEleves\demande_dossier1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>demande_dossier1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\DossierEleves\demande_dossier_all1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>demande_dossier_all1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\DossierEleves\demande_dossier_int1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>demande_dossier_int1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\DossierEleves\demande_dossier_int_all1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>demande_dossier_int_all1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\DossierEleves\demande_dossier_liste1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>demande_dossier_liste1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\DossierEleves\envoi_dossier1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>envoi_dossier1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\DossierEleves\envoi_dossier_liste1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>envoi_dossier_liste1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Emplois\emploi_classe1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emploi_classe1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Emplois\emploi_classe_search1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emploi_classe_search1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Emplois\emploi_classe_tout1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emploi_classe_tout1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Emplois\emploi_classe_tout1_with_2classes.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emploi_classe_tout1_with_2classes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Emplois\emploi_prof1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emploi_prof1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Emplois\emploi_prof_lettre1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emploi_prof_lettre1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Emplois\emploi_prof_search1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emploi_prof_search1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Emplois\emploi_prof_tout1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emploi_prof_tout1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Emplois\emploi_salle1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emploi_salle1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Emplois\emploi_salle_search1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emploi_salle_search1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Emplois\emploi_salle_tout1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emploi_salle_tout1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Emplois\emploi_stat_2_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emploi_stat_2_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Emplois\emploi_stat_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emploi_stat_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste10.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste10.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste11.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste12.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste12.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste13.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste13.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste14.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste14.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste15.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste15.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste16.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste16.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste17.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste17.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste18.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste18.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste18_ment.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste18_ment.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste19.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste19.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste20.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste20.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste21.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste21.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste22.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste22.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste23.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste23.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste24.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste24.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste25.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste25.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste26.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste26.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste6.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste6.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste7.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste7.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste8.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste8.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_liste9.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste9.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_abs_all10_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_abs_all10_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_abs_all3_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_abs_all3_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_abs_all4_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_abs_all4_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_abs_all5_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_abs_all5_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_abs_all6_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_abs_all6_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_abs_all7_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_abs_all7_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_abs_all8_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_abs_all8_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_abs_all9_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_abs_all9_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_affiche1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_affiche1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_centre1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_centre1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_chaise1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_chaise1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_convocation1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_convocation1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_dossier1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_dossier1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_ecole1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_ecole1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_emploi1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_emploi1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_fiche1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_fiche1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_liste1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_liste1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_liste_classe1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_liste_classe1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_liste_salle1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_liste_salle1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_liste_signature1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_liste_signature1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_liste_signature_all10_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_liste_signature_all10_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_liste_signature_all3_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_liste_signature_all3_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_liste_signature_all4_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_liste_signature_all4_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_liste_signature_all5_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_liste_signature_all5_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_liste_signature_all6_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_liste_signature_all6_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_liste_signature_all7_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_liste_signature_all7_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_liste_signature_all8_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_liste_signature_all8_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_liste_signature_all9_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_liste_signature_all9_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_liste_signature_vide1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_liste_signature_vide1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_porte1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_porte1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_normalise_repartition1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_normalise_repartition1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search10.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search10.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search11.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search12.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search12.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search13.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search13.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search14.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search14.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search15.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search15.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search16.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search16.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search17.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search17.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search18.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search18.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search19.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search19.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search20.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search20.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search21.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search21.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search22.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search22.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search23.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search23.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search24.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search24.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search25.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search25.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search26.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search26.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search6.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search6.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search7.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search7.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search8.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search8.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_search9.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_search9.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_stat1_2g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_stat1_2g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_stat1_3g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_stat1_3g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\controle_stat1_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_stat1_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\certi\controle_certificat_model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_certificat_model1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\certi\controle_certificat_model10.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_certificat_model10.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\certi\controle_certificat_model11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_certificat_model11.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\certi\controle_certificat_model12.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_certificat_model12.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\certi\controle_certificat_model2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_certificat_model2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\certi\controle_certificat_model3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_certificat_model3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\certi\controle_certificat_model4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_certificat_model4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\certi\controle_certificat_model5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_certificat_model5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\certi\controle_certificat_model6.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_certificat_model6.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\certi\controle_certificat_model6_ans.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_certificat_model6_ans.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\certi\controle_certificat_model7.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_certificat_model7.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\certi\controle_certificat_model8.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_certificat_model8.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\certi\controle_certificat_model9.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_certificat_model9.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_ataba_liste1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_ataba_liste1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_certificat1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_certificat1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_decision1_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_decision1_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_decision2_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_decision2_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_decision3_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_decision3_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_invitation_model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_invitation_model1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_3_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_3_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_3_dec_search1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_3_dec_search1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_4_1_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_4_1_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_4_1_dec_search1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_4_1_dec_search1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_4_2_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_4_2_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_4_2_dec_search1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_4_2_dec_search1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_5_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_5_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_5_dec_search1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_5_dec_search1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_dec_search1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_dec_search1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_ment1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_ment1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_ment_normalise1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_ment_normalise1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_ment_normalise_search1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_ment_normalise_search1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_ment_search1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_ment_search1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_normalise_3_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_normalise_3_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_normalise_3_dec_search1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_normalise_3_dec_search1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_normalise_4_1_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_normalise_4_1_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_normalise_4_1_dec_search1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_normalise_4_1_dec_search1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_normalise_4_2_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_normalise_4_2_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_normalise_4_2_dec_search1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_normalise_4_2_dec_search1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_normalise_5_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_normalise_5_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_normalise_5_dec_search1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_normalise_5_dec_search1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_normalise_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_normalise_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\controle_liste_normalise_dec_search1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_normalise_dec_search1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\invitation\controle_invitation_model1 - Copy %282%29.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_invitation_model1 - Copy %282%29.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\invitation\controle_invitation_model1 - Copy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_invitation_model1 - Copy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\invitation\controle_invitation_model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_invitation_model1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\invitation\controle_invitation_model10.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_invitation_model10.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\invitation\controle_invitation_model11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_invitation_model11.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\invitation\controle_invitation_model12.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_invitation_model12.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\invitation\controle_invitation_model2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_invitation_model2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\invitation\controle_invitation_model3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_invitation_model3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\invitation\controle_invitation_model4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_invitation_model4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\invitation\controle_invitation_model5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_invitation_model5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\invitation\controle_invitation_model6.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_invitation_model6.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\invitation\controle_invitation_model7.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_invitation_model7.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\invitation\controle_invitation_model8.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_invitation_model8.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\invitation\controle_invitation_model9.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_invitation_model9.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\pv\controle_pv1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_pv1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\tawjih\controle_liste_3_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_3_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\tawjih\controle_liste_4_1_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_4_1_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\tawjih\controle_liste_4_2_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_4_2_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\tawjih\controle_liste_5_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_5_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\tawjih\controle_liste_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\tawjih\controle_liste_normalise_3_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_normalise_3_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\tawjih\controle_liste_normalise_4_1_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_normalise_4_1_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\tawjih\controle_liste_normalise_4_2_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_normalise_4_2_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\tawjih\controle_liste_normalise_5_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_normalise_5_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\decision\tawjih\controle_liste_normalise_dec1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_liste_normalise_dec1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\exam_feuill_classe1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>exam_feuill_classe1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\exam_feuill_prof1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>exam_feuill_prof1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\exam_papier1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>exam_papier1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_badge1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_badge1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_badge1_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_badge1_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_badge2_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_badge2_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_badge3_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_badge3_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_badge4_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_badge4_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_badge5_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_badge5_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_badge6_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_badge6_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_badge7_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_badge7_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_badge8_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_badge8_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_deliv_papier1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_deliv_papier1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_difuse10_prof1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_difuse10_prof1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_difuse10_salle1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_difuse10_salle1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_difuse11_prof1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_difuse11_prof1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_difuse11_salle1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_difuse11_salle1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_difuse3_prof1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_difuse3_prof1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_difuse3_salle1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_difuse3_salle1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_difuse4_prof1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_difuse4_prof1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_difuse4_salle1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_difuse4_salle1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_difuse5_prof1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_difuse5_prof1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_difuse5_salle1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_difuse5_salle1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_difuse6_prof1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_difuse6_prof1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_difuse6_salle1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_difuse6_salle1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_difuse7_prof1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_difuse7_prof1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_difuse7_salle1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_difuse7_salle1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_difuse8_prof1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_difuse8_prof1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_difuse8_salle1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_difuse8_salle1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_difuse9_prof1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_difuse9_prof1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_difuse9_salle1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_difuse9_salle1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_difuse_matiere1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_difuse_matiere1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_fermer1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_fermer1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_lettre1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_lettre1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_lettre_mession1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_lettre_mession1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_liste_mession1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_liste_mession1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_liste_prof1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_liste_prof1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_open1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_open1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Exames\surveil\controle_surveil_prof_sig1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>controle_surveil_prof_sig1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Humaines\rh_admin1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rh_admin1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Humaines\rh_diplom1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rh_diplom1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Humaines\rh_liste1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rh_liste1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Humaines\rh_main1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rh_main1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Humaines\rh_perso1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rh_perso1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Humaines\rh_prof1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rh_prof1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Humaines\rh_prof_activ1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rh_prof_activ1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Humaines\rh_prof_fiche1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rh_prof_fiche1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Humaines\rh_prof_supp1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rh_prof_supp1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Inscriptions\inscription_liste1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inscription_liste1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Inscriptions\inscription_search1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inscription_search1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Inscriptions\inscription_stat_1_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inscription_stat_1_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Inscriptions\inscription_stat_2_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inscription_stat_2_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Inscriptions\inscription_stat_3_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inscription_stat_3_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Inscriptions\inscription_stat_g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inscription_stat_g.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\Inscriptions\inscription_stat_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inscription_stat_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Movements\movement_liste1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>movement_liste1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Movements\movement_search1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>movement_search1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Movements\movement_search1_2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>movement_search1_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Movements\movement_stat_1_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>movement_stat_1_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Movements\movement_stat_2_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>movement_stat_2_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Movements\movement_stat_g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>movement_stat_g.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\Movements\movement_stat_g1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>movement_stat_g1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Passwords\pass_massar1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pass_massar1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Passwords\pass_massar_fiche1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pass_massar_fiche1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\Passwords\pass_massar_fiche_a6_1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pass_massar_fiche_a6_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="sysdiagram.cs">
       <DependentUpon>EcoleDB.tt</DependentUpon>
     </Compile>
@@ -260,6 +2186,1290 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Students\StudentsList.resx">
       <DependentUpon>StudentsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_fiche1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_fiche1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_fiche1_a5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_fiche1_a5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_fiche1_g.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_fiche1_g.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_liste1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_liste1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_liste_anne1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_liste_anne1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_liste_avr1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_liste_avr1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_liste_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_liste_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_liste_fev1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_liste_fev1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_liste_jan1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_liste_jan1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_liste_jui1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_liste_jui1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_liste_mai1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_liste_mai1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_liste_mar1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_liste_mar1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_liste_notif1_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_liste_notif1_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_liste_notif2_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_liste_notif2_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_liste_notif3_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_liste_notif3_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_liste_notif4_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_liste_notif4_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_liste_nov1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_liste_nov1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_liste_oct1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_liste_oct1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_liste_sep1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_liste_sep1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_msg_notif1_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_msg_notif1_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_msg_notif2_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_msg_notif2_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_msg_notif3_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_msg_notif3_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_msg_notif4_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_msg_notif4_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_papier1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_papier2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_papier2_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier2_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_search_anne1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_search_anne1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_search_avr1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_search_avr1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_search_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_search_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_search_fev1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_search_fev1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_search_jan1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_search_jan1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_search_jui1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_search_jui1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_search_mai1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_search_mai1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_search_mar1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_search_mar1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_search_nov1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_search_nov1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_search_oct1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_search_oct1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_search_sep1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_search_sep1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_stat_g.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_stat_g.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_stat_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_stat_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_stat_g1_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_stat_g1_2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\absence_stat_g1_3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_stat_g1_3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier1_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier1_2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier1_2_emploi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier1_2_emploi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier1_7j.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier1_7j.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier1_emploi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier1_emploi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier2_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier2_2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier2_2_emploi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier2_2_emploi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier2_7j.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier2_7j.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier2_7j_ans.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier2_7j_ans.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier2_emploi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier2_emploi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier3_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier3_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier3_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier3_2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier3_2_emploi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier3_2_emploi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier3_7j.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier3_7j.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier3_emploi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier3_emploi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier4_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier4_2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier4_2_emploi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier4_2_emploi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Absences\papiers\absence_papier4_emploi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>absence_papier4_emploi.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Arrivels\wafidon_liste1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>wafidon_liste1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Classes\classe_liste1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>classe_liste1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Classes\classe_liste_rep1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>classe_liste_rep1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Classes\classe_repartition1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>classe_repartition1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Classes\classe_repartition1_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>classe_repartition1_2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Classes\classe_repartition1_3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>classe_repartition1_3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Classes\classe_search1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>classe_search1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Classes\classe_stat_2_age_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>classe_stat_2_age_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Classes\classe_stat_2_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>classe_stat_2_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Classes\classe_stat_age_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>classe_stat_age_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Classes\classe_stat_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>classe_stat_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Departures\moghadiron_liste1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>moghadiron_liste1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Departures\moghadiron_stat_1_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>moghadiron_stat_1_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Departures\moghadiron_stat_2_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>moghadiron_stat_2_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Departures\moghadiron_stat_academey_1_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>moghadiron_stat_academey_1_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Departures\moghadiron_stat_academey_2_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>moghadiron_stat_academey_2_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Departures\moghadiron_stat_commune_1_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>moghadiron_stat_commune_1_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Departures\moghadiron_stat_commune_2_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>moghadiron_stat_commune_2_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Departures\moghadiron_stat_delegation_1_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>moghadiron_stat_delegation_1_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Departures\moghadiron_stat_delegation_2_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>moghadiron_stat_delegation_2_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Departures\moghadiron_stat_ecole_1_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>moghadiron_stat_ecole_1_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Departures\moghadiron_stat_ecole_2_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>moghadiron_stat_ecole_2_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\DossierEleves\demande_dossier1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>demande_dossier1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\DossierEleves\demande_dossier_all1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>demande_dossier_all1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\DossierEleves\demande_dossier_int1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>demande_dossier_int1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\DossierEleves\demande_dossier_int_all1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>demande_dossier_int_all1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\DossierEleves\demande_dossier_liste1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>demande_dossier_liste1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\DossierEleves\envoi_dossier1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>envoi_dossier1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\DossierEleves\envoi_dossier_liste1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>envoi_dossier_liste1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Emplois\emploi_classe1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>emploi_classe1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Emplois\emploi_classe_search1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>emploi_classe_search1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Emplois\emploi_classe_tout1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>emploi_classe_tout1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Emplois\emploi_classe_tout1_with_2classes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>emploi_classe_tout1_with_2classes.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Emplois\emploi_prof1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>emploi_prof1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Emplois\emploi_prof_lettre1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>emploi_prof_lettre1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Emplois\emploi_prof_search1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>emploi_prof_search1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Emplois\emploi_prof_tout1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>emploi_prof_tout1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Emplois\emploi_salle1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>emploi_salle1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Emplois\emploi_salle_search1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>emploi_salle_search1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Emplois\emploi_salle_tout1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>emploi_salle_tout1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Emplois\emploi_stat_2_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>emploi_stat_2_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Emplois\emploi_stat_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>emploi_stat_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste10.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste10.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste11.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste12.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste13.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste13.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste14.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste14.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste15.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste15.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste16.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste16.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste17.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste17.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste18.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste18.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste18_ment.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste18_ment.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste19.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste19.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste20.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste20.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste21.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste21.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste22.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste22.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste23.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste23.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste24.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste24.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste25.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste25.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste26.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste26.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste6.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste6.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste7.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste7.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste8.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste8.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_liste9.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste9.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_abs_all10_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_abs_all10_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_abs_all3_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_abs_all3_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_abs_all4_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_abs_all4_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_abs_all5_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_abs_all5_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_abs_all6_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_abs_all6_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_abs_all7_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_abs_all7_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_abs_all8_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_abs_all8_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_abs_all9_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_abs_all9_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_affiche1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_affiche1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_centre1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_centre1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_chaise1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_chaise1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_convocation1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_convocation1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_dossier1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_dossier1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_ecole1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_ecole1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_emploi1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_emploi1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_fiche1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_fiche1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_liste1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_liste1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_liste_classe1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_liste_classe1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_liste_salle1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_liste_salle1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_liste_signature1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_liste_signature1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_liste_signature_all10_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_liste_signature_all10_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_liste_signature_all3_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_liste_signature_all3_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_liste_signature_all4_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_liste_signature_all4_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_liste_signature_all5_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_liste_signature_all5_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_liste_signature_all6_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_liste_signature_all6_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_liste_signature_all7_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_liste_signature_all7_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_liste_signature_all8_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_liste_signature_all8_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_liste_signature_all9_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_liste_signature_all9_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_liste_signature_vide1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_liste_signature_vide1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_porte1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_porte1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_normalise_repartition1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_normalise_repartition1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search10.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search10.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search11.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search12.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search13.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search13.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search14.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search14.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search15.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search15.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search16.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search16.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search17.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search17.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search18.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search18.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search19.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search19.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search20.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search20.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search21.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search21.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search22.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search22.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search23.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search23.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search24.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search24.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search25.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search25.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search26.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search26.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search6.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search6.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search7.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search7.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search8.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search8.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_search9.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_search9.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_stat1_2g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_stat1_2g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_stat1_3g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_stat1_3g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\controle_stat1_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_stat1_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\certi\controle_certificat_model1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_certificat_model1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\certi\controle_certificat_model10.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_certificat_model10.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\certi\controle_certificat_model11.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_certificat_model11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\certi\controle_certificat_model12.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_certificat_model12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\certi\controle_certificat_model2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_certificat_model2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\certi\controle_certificat_model3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_certificat_model3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\certi\controle_certificat_model4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_certificat_model4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\certi\controle_certificat_model5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_certificat_model5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\certi\controle_certificat_model6.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_certificat_model6.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\certi\controle_certificat_model6_ans.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_certificat_model6_ans.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\certi\controle_certificat_model7.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_certificat_model7.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\certi\controle_certificat_model8.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_certificat_model8.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\certi\controle_certificat_model9.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_certificat_model9.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_ataba_liste1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_ataba_liste1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_certificat1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_certificat1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_decision1_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_decision1_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_decision2_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_decision2_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_decision3_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_decision3_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_invitation_model1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_invitation_model1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_3_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_3_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_3_dec_search1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_3_dec_search1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_4_1_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_4_1_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_4_1_dec_search1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_4_1_dec_search1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_4_2_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_4_2_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_4_2_dec_search1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_4_2_dec_search1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_5_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_5_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_5_dec_search1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_5_dec_search1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_dec_search1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_dec_search1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_ment1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_ment1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_ment_normalise1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_ment_normalise1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_ment_normalise_search1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_ment_normalise_search1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_ment_search1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_ment_search1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_normalise_3_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_normalise_3_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_normalise_3_dec_search1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_normalise_3_dec_search1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_normalise_4_1_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_normalise_4_1_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_normalise_4_1_dec_search1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_normalise_4_1_dec_search1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_normalise_4_2_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_normalise_4_2_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_normalise_4_2_dec_search1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_normalise_4_2_dec_search1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_normalise_5_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_normalise_5_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_normalise_5_dec_search1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_normalise_5_dec_search1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_normalise_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_normalise_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\controle_liste_normalise_dec_search1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_normalise_dec_search1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\invitation\controle_invitation_model1 - Copy %282%29.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_invitation_model1 - Copy %282%29.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\invitation\controle_invitation_model1 - Copy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_invitation_model1 - Copy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\invitation\controle_invitation_model1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_invitation_model1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\invitation\controle_invitation_model10.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_invitation_model10.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\invitation\controle_invitation_model11.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_invitation_model11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\invitation\controle_invitation_model12.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_invitation_model12.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\invitation\controle_invitation_model2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_invitation_model2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\invitation\controle_invitation_model3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_invitation_model3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\invitation\controle_invitation_model4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_invitation_model4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\invitation\controle_invitation_model5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_invitation_model5.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\invitation\controle_invitation_model6.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_invitation_model6.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\invitation\controle_invitation_model7.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_invitation_model7.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\invitation\controle_invitation_model8.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_invitation_model8.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\invitation\controle_invitation_model9.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_invitation_model9.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\pv\controle_pv1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_pv1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\tawjih\controle_liste_3_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_3_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\tawjih\controle_liste_4_1_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_4_1_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\tawjih\controle_liste_4_2_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_4_2_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\tawjih\controle_liste_5_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_5_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\tawjih\controle_liste_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\tawjih\controle_liste_normalise_3_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_normalise_3_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\tawjih\controle_liste_normalise_4_1_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_normalise_4_1_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\tawjih\controle_liste_normalise_4_2_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_normalise_4_2_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\tawjih\controle_liste_normalise_5_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_normalise_5_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\decision\tawjih\controle_liste_normalise_dec1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_liste_normalise_dec1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\exam_feuill_classe1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>exam_feuill_classe1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\exam_feuill_prof1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>exam_feuill_prof1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\exam_papier1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>exam_papier1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_badge1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_badge1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_badge1_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_badge1_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_badge2_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_badge2_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_badge3_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_badge3_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_badge4_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_badge4_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_badge5_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_badge5_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_badge6_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_badge6_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_badge7_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_badge7_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_badge8_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_badge8_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_deliv_papier1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_deliv_papier1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_difuse10_prof1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_difuse10_prof1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_difuse10_salle1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_difuse10_salle1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_difuse11_prof1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_difuse11_prof1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_difuse11_salle1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_difuse11_salle1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_difuse3_prof1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_difuse3_prof1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_difuse3_salle1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_difuse3_salle1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_difuse4_prof1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_difuse4_prof1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_difuse4_salle1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_difuse4_salle1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_difuse5_prof1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_difuse5_prof1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_difuse5_salle1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_difuse5_salle1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_difuse6_prof1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_difuse6_prof1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_difuse6_salle1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_difuse6_salle1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_difuse7_prof1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_difuse7_prof1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_difuse7_salle1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_difuse7_salle1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_difuse8_prof1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_difuse8_prof1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_difuse8_salle1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_difuse8_salle1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_difuse9_prof1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_difuse9_prof1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_difuse9_salle1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_difuse9_salle1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_difuse_matiere1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_difuse_matiere1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_fermer1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_fermer1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_lettre1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_lettre1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_lettre_mession1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_lettre_mession1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_liste_mession1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_liste_mession1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_liste_prof1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_liste_prof1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_open1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_open1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Exames\surveil\controle_surveil_prof_sig1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>controle_surveil_prof_sig1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Humaines\rh_admin1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rh_admin1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Humaines\rh_diplom1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rh_diplom1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Humaines\rh_liste1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rh_liste1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Humaines\rh_main1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rh_main1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Humaines\rh_perso1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rh_perso1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Humaines\rh_prof1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rh_prof1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Humaines\rh_prof_activ1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rh_prof_activ1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Humaines\rh_prof_fiche1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rh_prof_fiche1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Humaines\rh_prof_supp1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rh_prof_supp1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Inscriptions\inscription_liste1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>inscription_liste1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Inscriptions\inscription_search1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>inscription_search1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Inscriptions\inscription_stat_1_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>inscription_stat_1_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Inscriptions\inscription_stat_2_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>inscription_stat_2_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Inscriptions\inscription_stat_3_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>inscription_stat_3_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Inscriptions\inscription_stat_g.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>inscription_stat_g.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Inscriptions\inscription_stat_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>inscription_stat_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Movements\movement_liste1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>movement_liste1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Movements\movement_search1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>movement_search1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Movements\movement_search1_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>movement_search1_2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Movements\movement_stat_1_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>movement_stat_1_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Movements\movement_stat_2_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>movement_stat_2_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Movements\movement_stat_g.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>movement_stat_g.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Movements\movement_stat_g1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>movement_stat_g1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Passwords\pass_massar1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>pass_massar1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Passwords\pass_massar_fiche1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>pass_massar_fiche1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\Passwords\pass_massar_fiche_a6_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>pass_massar_fiche_a6_1.cs</LastGenOutput>
     </EmbeddedResource>
     <EntityDeploy Include="EcoleDB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -308,7 +3518,11 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Forms\Absences\" />
+    <Folder Include="Forms\Sessions\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
